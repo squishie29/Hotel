@@ -1,0 +1,23 @@
+hotel:
+idH,nomHotel,nbEtoil,nbChambre,photo,description,adresse,note
+//
+chambre:
+idCh,nbBed,facilite,extra
+
+	private $idH;
+	private $nomHotel;
+	private $nbEtoil;
+	private $nbChambre;
+	private $photo;
+    private $description;
+    private $adresse;
+    private $note;
+<?php 
+                                                    $res=$hotel1C->calculernote();
+                                                    foreach($res as $varr){
+                                                        foreach($varr as $varr1){
+                                                        $s=$varr1;
+                                                    }
+                                                    }
+                                                    echo $s;
+                                                    ?>

@@ -1,0 +1,1423 @@
+/* Responsive css*/
+
+@media only screen and (max-width: 767px) {
+  br {
+    display: none;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 8px 15px 0 0;
+  }
+  .mean-container .mean-nav {
+    margin-top: 48px;
+  }
+  .main-slides .main-banner {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+  .main-slides .main-banner .main-form {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .main-slides .main-banner .main-form form .form-group .form-control {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 10px;
+  }
+  .main-slides .main-banner .main-form form .banner-icon i {
+    top: 0;
+    right: 0;
+    width: 60px;
+  }
+  .main-slides .main-banner .banner-video {
+    display: none;
+  }
+  .main-slides .main-banner-content {
+    text-align: center;
+    max-width: 100%;
+  }
+  .main-slides .main-banner-content h1 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+  }
+  .main-slides .main-banner-content p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+  .main-slides .main-banner-content .banner-btn {
+    margin-top: 20px;
+  }
+  .main-slides .owl-prev {
+    top: auto;
+    bottom: 40px;
+  }
+  .main-slides .owl-next {
+    top: auto;
+    bottom: 40px;
+  }
+  .support-content {
+    margin-bottom: 30px;
+  }
+  .provide-section {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .provide-area .provide-content h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .provide-area .provide-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .provide-features .provide-box {
+    padding: 30px 10px;
+  }
+  .provide-features .provide-box h3 {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+  }
+  .popular-section {
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+  .popular-image img {
+    width: 100%;
+  }
+  .offer-area .offer-content h3 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .offer-area .offer-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .offer-section {
+    padding-bottom: 30px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+    margin: 0 0 12px 0;
+  }
+  .section-title p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .restaurents-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .restaurents-title h2 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+  }
+  .restaurents-area {
+    margin-bottom: 30px;
+  }
+  .restaurents-image img {
+    width: 100%;
+  }
+  .restaurents-item {
+    padding: 16px 16px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+    box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+  }
+  .restaurents-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .vaccation-section {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .single-vaccation-item {
+    margin-bottom: 30px;
+  }
+  .testimonial-section {
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+  .pt-140 {
+    padding-top: 60px !important;
+  }
+  .testimonial-image img {
+    right: 0;
+    top: 0;
+    position: relative;
+  }
+  .testimonial-slider .testimonial-area {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    margin-top: 0;
+  }
+  .testimonial-slider .testimonial-area .testimonial-item p {
+    font-size: 16px;
+    margin: 10px 0 12px 0;
+    line-height: 30px;
+  }
+  .testimonial-slider .testimonial-area .testimonial-content h3 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+  .testimonial-slider .owl-prev {
+    bottom: 0;
+    top: auto;
+    right: 30px;
+  }
+  .testimonial-slider .owl-next {
+    bottom: 0;
+    top: auto;
+    right: 0;
+  }
+  .testimonial-image .bar-image {
+    display: none;
+  }
+  .blog-title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .blog-title h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .blog-item {
+    margin-bottom: 30px;
+  }
+  .blog-content h3 {
+    font-size: 18px !important;
+    margin: 0 0 12px 0 !important;
+    line-height: 25px;
+  }
+  .blog-slider .owl-dots .owl-dot {
+    top: -20px;
+  }
+  .blog-list li {
+    font-size: 14px !important;
+    margin-right: 5px !important;
+  }
+  .blog-image img {
+    width: 100%;
+  }
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  .menu-item .quick-menu span {
+    padding-left: 0;
+  }
+  .menu-item .quick-menu li {
+    margin-bottom: 10px;
+  }
+  .video-banner .main-banner-content {
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  .video-banner .main-banner-content h1 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .video-banner .main-banner-content p {
+    font-size: 14px;
+  }
+  .video-banner .main-banner-content .banner-btn {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .video-banner .banner-video .video-btn {
+    left: 0;
+    margin-top: 0;
+    right: 0;
+    top: 35%;
+  }
+  .video-banner .banner-video .video-btn a {
+    width: 60px;
+    height: 60px;
+    line-height: 62px;
+    border: none;
+  }
+  .video-banner .banner-video .video-btn a::after {
+    width: 60px;
+    height: 60px;
+  }
+  .video-banner .banner-video .video-btn i::before {
+    font-size: 30px;
+  }
+  .video-banner .banner-video .video-text {
+    display: none;
+  }
+  .video-banner .banner-form {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+  .video-banner .banner-form form .form-group .form-control {
+    border: none;
+    margin-bottom: 10px;
+  }
+  .video-banner .banner-form form .banner-icon i {
+    top: 0;
+    right: 0;
+    width: 65px;
+  }
+  .video-banner .banner-image-bg {
+    background-image: unset;
+    height: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .video-banner .banner-image-bg img {
+    display: inline-block;
+  }
+  .arround-img-wrapper .arround-img-1 img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border: none;
+  }
+  .arround-img-wrapper .arround-img-2 {
+    position: relative;
+    top: 10px;
+    left: 0;
+  }
+  .arround-content h2 {
+    font-size: 25px;
+    margin: 30px 0 8px 0;
+  }
+  .arround-section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .arround-features .no-padding {
+    padding: 10px 0 0px 0;
+  }
+  .tips-image {
+    margin-top: 20px;
+  }
+  .tips-content {
+    margin-right: 0;
+  }
+  .tips-content h3 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .tips-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .tips-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .destinations-title {
+    margin-bottom: 30px;
+  }
+  .destinations-title h2 {
+    font-size: 25px;
+    color: #000000;
+    margin: 0 0 0 0;
+  }
+  .destinations-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .benefits-title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .benefits-title h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .benefits-slider .owl-dots .owl-dot {
+    top: -18px;
+  }
+  .benefits-item {
+    margin-bottom: 30px;
+  }
+  .subscribe-cotent h2 {
+    font-size: 25px;
+    margin: 0 0 14px 0;
+  }
+  .subscribe-cotent p {
+    margin: 0;
+  }
+  .subscribe-btn {
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 17px;
+    right: 11px;
+  }
+  .subscribe-form .form-control {
+    width: 100%;
+  }
+  .subscribe-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about-img-wrapper .about-img-1 img {
+    right: 0;
+  }
+  .about-img-wrapper .about-img-2 img {
+    top: 130px;
+    left: -15px;
+  }
+  .about-content h2 {
+    font-size: 28px;
+    margin: 45px 0 12px 0;
+  }
+  .about-btn {
+    margin-top: 0;
+  }
+  .about-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .mission-section {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .mission-area .mission-content h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+  }
+  .mission-area .mission-list {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .tours-section {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .single-details {
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+  .form-gallery-content h3 {
+    margin: 10px 0 0 0;
+  }
+  .form-gallery-section {
+    padding-bottom: 60px;
+  }
+  .form-gallery-image {
+    margin-top: 20px;
+  }
+  .single-tours-image img {
+    width: 100%;
+  }
+  .pagination-area {
+    margin-top: 10px;
+  }
+  .pagination-area .page-numbers {
+    width: 35px;
+  }
+  .news-page-section {
+    padding-bottom: 50px;
+  }
+  .news-details .article-content {
+    padding: 10px;
+  }
+  .post-controls-buttons {
+    padding: 10px;
+  }
+  .post-comments {
+    padding: 20px 10px;
+  }
+  .post-comments .single-comment.left-m {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .post-comments .single-comment .comment-content a {
+    display: none;
+  }
+  .leave-a-reply {
+    padding: 20px 10px;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  .sidebar .widget.widget-recent-entries {
+    padding: 28px 10px;
+  }
+  .sidebar .widget.widget-recent-entries ul li {
+    margin-bottom: 30px;
+  }
+  .sidebar .widget.widget-instagram-feed .instagram-feed li {
+    width: 82px;
+  }
+  .contact-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-title {
+    margin-bottom: 30px;
+  }
+  .contact-title h2 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+  }
+  .newsletter-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .newsletter-title {
+    margin-bottom: 30px;
+  }
+  .newsletter-title h2 {
+    font-size: 30px;
+    margin: 0 0 15px 0;
+  }
+  .newsletter-title .newsletter-title p {
+    font-size: 14px;
+  }
+  .faq-accordion {
+    padding: 15px;
+  }
+  .faq-contact {
+    padding: 20px;
+  }
+  .faq-section {
+    margin-bottom: 30px;
+  }
+  .coming-soon-content h1 {
+    font-size: 25px;
+  }
+  .coming-soon-content #timer div {
+    margin: 10px 10px;
+  }
+  .signup-form {
+    padding: 16px;
+  }
+  .signup-form form .send-btn {
+    margin-bottom: 20px;
+  }
+  .signin-section {
+    padding-bottom: 50px;
+  }
+  .login-form {
+    padding: 16px;
+  }
+  .login-form form .send-btn {
+    margin-bottom: 20px;
+  }
+  .login-section {
+    padding-bottom: 50px;
+  }
+  .subscribe-section .pr-0, .subscribe-section .px-0 {
+    padding-right: 10px !important;
+  }
+  .subscribe-section .p-0 {
+    padding: 18px !important;
+  }
+  .footer-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .footer-section .instagram-feed li {
+    width: unset;
+    float: unset;
+    padding: 2px;
+    display: inline-block;
+  }
+  .footer-section .instagram-feed img {
+    max-width: 80px;
+  }
+  .single-tours-item .single-tours-content span {
+    font-size: 14px;
+    width: 56%;
+  }
+  .info-area .contact-box {
+    margin: 25px auto;
+    text-align: center;
+  }
+  .gallery-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .gallery-section .filter-menu {
+    margin-bottom: 25px;
+  }
+  .gallery-section .filter-menu li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+  .gallery-section .gallery-btn {
+    margin-top: 0;
+  }
+  .coming-soon-area {
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .rest-image {
+    margin-bottom: 10px;
+  }
+  .comment-form-cookies-consent {
+    font-size: 14px;
+  }
+  .comment-form-cookies-consent input[type=checkbox], .comment-form-cookies-consent input[type=radio] {
+    position: absolute;
+    top: 4px;
+  }
+  .newsletterForm .newsletter-btn .newsletter-btn-one {
+    padding: 17px 20px;
+  }
+  .newsletterForm .comment-form-cookies-consent input[type=checkbox], .newsletterForm .comment-form-cookies-consent .comment-form-cookies-consent input[type=radio] {
+    position: absolute;
+    top: 94px;
+  }
+  .leave-a-reply {
+    text-align: center !important;
+  }
+  .leave-a-reply .comment-form-cookies-consent {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    padding-left: 20px;
+  }
+  .leave-a-reply .comment-form-cookies-consent input[type=checkbox], .leave-a-reply .comment-form-cookies-consent input[type=radio] {
+    position: absolute;
+    top: 2px;
+    left: 6%;
+  }
+  .newsletterForm .newsletter-btn {
+    right: 16px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about-content {
+    text-align: left;
+  }
+  .about-content h2 {
+    margin: 50px 0 12px 0;
+  }
+  .about-btn {
+    text-align: left;
+    margin-top: -15px;
+    padding-bottom: 0;
+  }
+  .mission-area {
+    text-align: left;
+  }
+  .mission-area .mission-list {
+    margin-top: 10px;
+  }
+  .subscribe-section {
+    text-align: left;
+  }
+  .subscribe-btn {
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+  .provide-area .provide-content {
+    text-align: left;
+  }
+  .provide-area .provide-btn {
+    text-align: left;
+  }
+  .offer-area {
+    text-align: left;
+  }
+  .footer-section .instagram-feed img {
+    max-width: 70px;
+  }
+  .video-banner .banner-video .video-btn a {
+    width: 100px;
+    height: 100px;
+    line-height: 102px;
+    border: none;
+  }
+  .video-banner .banner-video .video-btn a::after {
+    width: 100px;
+    height: 100px;
+  }
+  .video-banner .banner-video .video-btn i::before {
+    font-size: 50px;
+  }
+  .arround-section {
+    padding-bottom: 30px;
+  }
+  .arround-features .no-padding {
+    padding: 10px 10px 10px 10px;
+  }
+  .arround-content {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .tips-content {
+    text-align: left;
+  }
+  .arround-img-wrapper .arround-img-1 img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: unset;
+    border-bottom: 30px solid #ffffff;
+    border-left: 30px solid #ffffff;
+  }
+  .arround-img-wrapper .arround-img-2 {
+    top: 0;
+  }
+  .comment-form-cookies-consent {
+    font-size: 14px;
+  }
+  .comment-form-cookies-consent input[type=checkbox], .comment-form-cookies-consent input[type=radio] {
+    position: absolute;
+    top: 4px;
+    left: 10%;
+  }
+  .newsletterForm .newsletter-btn .newsletter-btn-one {
+    padding: 17px 20px;
+  }
+  .newsletterForm .comment-form-cookies-consent input[type=checkbox], .newsletterForm .comment-form-cookies-consent .comment-form-cookies-consent input[type=radio] {
+    position: absolute;
+    top: 94px;
+  }
+  .leave-a-reply {
+    text-align: center !important;
+  }
+  .leave-a-reply .comment-form-cookies-consent {
+    font-size: 12px;
+    text-align: center;
+  }
+  .leave-a-reply .comment-form-cookies-consent input[type=checkbox], .leave-a-reply .comment-form-cookies-consent input[type=radio] {
+    position: absolute;
+    top: 2px;
+    left: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  br {
+    display: none;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 8px 15px 0 0;
+  }
+  .mean-container .mean-nav {
+    margin-top: 48px;
+  }
+  .main-slides .main-banner {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 160px;
+  }
+  .main-slides .main-banner .main-form {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .main-slides .main-banner .main-form form .form-group .form-control {
+    border-right: none;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .main-slides .main-banner .main-form form .form-group .form-control:last-child {
+    margin-bottom: 0;
+  }
+  .main-slides .main-banner .main-form form .banner-icon i {
+    width: 40px;
+  }
+  .main-slides .main-banner .banner-video {
+    display: none;
+  }
+  .main-slides .main-banner-content {
+    text-align: center;
+    margin: auto;
+  }
+  .main-slides .main-banner-content h1 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+  }
+  .main-slides .main-banner-content p {
+    font-size: 15px;
+    margin: auto;
+  }
+  .main-slides .main-banner-content .banner-btn {
+    margin-top: 20px;
+  }
+  .main-slides .owl-prev {
+    top: auto;
+    bottom: 40px;
+  }
+  .main-slides .owl-next {
+    top: auto;
+    bottom: 40px;
+  }
+  .support-content {
+    margin-bottom: 30px;
+  }
+  .provide-section {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .provide-area .provide-content h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .provide-area .provide-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .provide-features .provide-box {
+    padding: 30px 10px;
+  }
+  .provide-features .provide-box h3 {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+  }
+  .offer-section {
+    padding-bottom: 30px;
+  }
+  .popular-section {
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+  .popular-image img {
+    width: 100%;
+  }
+  .offer-area .offer-content h3 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .offer-area .offer-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  .restaurents-title {
+    margin-bottom: 30px;
+  }
+  .restaurents-title h2 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+  }
+  .restaurents-area {
+    margin-bottom: 30px;
+  }
+  .restaurents-image img {
+    width: 100%;
+  }
+  .restaurents-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .restaurents-item {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+    box-shadow: 0 0 40px rgba(82, 85, 90, 0.1);
+  }
+  .vaccation-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .single-vaccation-item {
+    margin-bottom: 30px;
+  }
+  .testimonial-section {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .pt-140 {
+    padding-top: 50px !important;
+  }
+  .testimonial-image img {
+    right: 0;
+    top: 0;
+    width: 100%;
+    position: relative;
+  }
+  .testimonial-image .bar-image {
+    display: none;
+  }
+  .testimonial-slider .testimonial-area {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    margin-top: 0;
+  }
+  .testimonial-slider .testimonial-area .testimonial-item p {
+    font-size: 16px;
+    margin: 10px 0 12px 0;
+    line-height: 30px;
+  }
+  .testimonial-slider .testimonial-area .testimonial-content h3 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+  .testimonial-slider .owl-prev {
+    display: none;
+  }
+  .testimonial-slider .owl-next {
+    display: none;
+  }
+  .blog-title {
+    margin-bottom: 30px;
+  }
+  .blog-title h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .blog-item {
+    margin-bottom: 30px;
+  }
+  .blog-content h3 {
+    font-size: 18px;
+    margin: 0 0 12px 0;
+    line-height: 25px;
+  }
+  .blog-list li {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  .blog-slider .owl-dots .owl-dot {
+    top: -20px;
+  }
+  .blog-image img {
+    width: 100%;
+  }
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  .menu-item .quick-menu span {
+    padding-left: 0;
+  }
+  .video-banner .main-banner-content {
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+  }
+  .video-banner .main-banner-content h1 {
+    font-size: 35px;
+    margin: 0 0 10px 0;
+  }
+  .video-banner .main-banner-content p {
+    font-size: 16px;
+    margin: auto;
+  }
+  .video-banner .main-banner-content .banner-btn {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .video-banner .banner-video .video-btn {
+    left: 0;
+    right: 0;
+    top: 30%;
+  }
+  .video-banner .banner-video .video-btn i::before {
+    font-size: 30px;
+  }
+  .video-banner .banner-video .video-text {
+    right: 90px;
+    left: auto;
+    top: 25%;
+  }
+  .video-banner .banner-video .video-text h3 {
+    color: #000000;
+  }
+  .video-banner .banner-video .video-text p {
+    color: #000000;
+  }
+  .video-banner .banner-form {
+    padding-left: 0;
+    margin-top: -100px;
+  }
+  .video-banner .banner-form form .banner-icon i {
+    top: 0;
+    right: 0;
+    width: 40px;
+  }
+  .video-banner .banner-image-bg img {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+  }
+  .arround-img-wrapper .arround-img-1 {
+    text-align: center;
+  }
+  .arround-img-wrapper .arround-img-1 img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .arround-img-wrapper .arround-img-2 {
+    text-align: left;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .arround-content h2 {
+    font-size: 25px;
+    margin: 30px 0 8px 0;
+  }
+  .arround-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .tips-content {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .tips-content h3 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .tips-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .tips-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .destinations-title {
+    margin-bottom: 30px;
+  }
+  .destinations-title h2 {
+    font-size: 25px;
+    color: #000000;
+    margin: 0 0 0 0;
+  }
+  .destinations-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .benefits-title {
+    margin-bottom: 30px;
+  }
+  .benefits-title h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+  }
+  .benefits-slider .owl-dots .owl-dot {
+    top: -18px;
+  }
+  .benefits-item {
+    margin-bottom: 30px;
+  }
+  .subscribe-cotent h2 {
+    font-size: 25px;
+    margin: 0 0 14px 0;
+  }
+  .subscribe-btn {
+    margin-bottom: 30px;
+  }
+  .subscribe-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about-img-wrapper .about-img-1 img {
+    right: 0;
+  }
+  .about-img-wrapper .about-img-2 img {
+    top: 130px;
+    left: -15px;
+  }
+  .about-content h2 {
+    font-size: 28px;
+    margin: 40px 0 12px 0;
+  }
+  .about-btn {
+    margin-top: 0;
+  }
+  .about-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .mission-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .mission-area .mission-content h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+  }
+  .mission-area .mission-list {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .tours-section {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .single-details {
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+  .form-gallery-content h3 {
+    margin: 10px 0 0 0;
+  }
+  .form-gallery-section {
+    padding-bottom: 60px;
+  }
+  .form-gallery-image {
+    margin-top: 20px;
+  }
+  .single-tours-image img {
+    width: 100%;
+  }
+  .pagination-area {
+    margin-top: 10px;
+  }
+  .pagination-area .page-numbers {
+    width: 35px;
+  }
+  .news-page-section {
+    padding-bottom: 50px;
+  }
+  .sidebar .widget.widget-recent-entries {
+    padding-bottom: 50px;
+  }
+  .sidebar .widget.widget-recent-entries ul li {
+    margin-bottom: 30px;
+  }
+  .contact-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-title {
+    margin-bottom: 30px;
+  }
+  .contact-title h2 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+  }
+  .newsletter-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .newsletterForm .newsletter-btn .newsletter-btn-one {
+    padding: 17px 20px;
+  }
+  .newsletter-title {
+    margin-bottom: 30px;
+  }
+  .newsletter-title h2 {
+    font-size: 30px;
+    margin: 0 0 15px 0;
+  }
+  .newsletter-title .newsletter-title p {
+    font-size: 14px;
+  }
+  .faq-accordion {
+    padding: 15px;
+  }
+  .faq-contact {
+    padding: 20px;
+  }
+  .faq-section {
+    margin-bottom: 30px;
+  }
+  .signup-form form .send-btn {
+    margin-bottom: 20px;
+  }
+  .signin-section {
+    padding-bottom: 50px;
+  }
+  .login-form form .send-btn {
+    margin-bottom: 20px;
+  }
+  .login-section {
+    padding-bottom: 50px;
+  }
+  .offer-image {
+    text-align: center;
+  }
+  .footer-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .single-tours-item .single-tours-content span {
+    width: 70%;
+  }
+  .info-area .contact-box {
+    margin-left: 0;
+    margin: 25px auto;
+  }
+  .gallery-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .gallery-section .filter-menu {
+    margin-bottom: 25px;
+  }
+  .gallery-section .filter-menu li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+  }
+  .gallery-section .gallery-btn {
+    margin-top: 0;
+  }
+  .offer-image img {
+    width: 100%;
+  }
+  .map-image {
+    text-align: center;
+  }
+  .newsletterForm .newsletter-btn {
+    right: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  br {
+    display: none;
+  }
+  .main-slides .main-banner-content {
+    text-align: left;
+    margin: auto;
+  }
+  .main-slides .main-banner-content h1 {
+    font-size: 50px;
+    margin: 0 0 16px 0;
+  }
+  .main-slides .main-banner-content p {
+    font-size: 18px;
+  }
+  .main-slides .main-banner-content .banner-btn {
+    margin-top: 20px;
+  }
+  .main-slides .owl-prev {
+    top: auto;
+    bottom: 40px;
+  }
+  .main-slides .owl-next {
+    top: auto;
+    bottom: 40px;
+  }
+  .provide-area .provide-content h2 {
+    margin: -6px 0 10px 0;
+  }
+  .provide-area .provide-btn {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .provide-features .provide-box {
+    padding: 30px 10px;
+  }
+  .provide-features .provide-box h3 {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+  }
+  .popular-image img {
+    width: 100%;
+  }
+  .offer-area .offer-content h3 {
+    margin: 0 0 10px 0;
+  }
+  .offer-area .offer-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
+  .restaurents-title {
+    margin-bottom: 30px;
+  }
+  .restaurents-title h2 {
+    margin: -8px 0 10px 0;
+  }
+  .restaurents-image img {
+    width: 100%;
+  }
+  .testimonial-image img {
+    right: 0;
+    top: -45px;
+  }
+  .testimonial-image .bar-image {
+    display: none;
+  }
+  .testimonial-section {
+    padding-bottom: 120px;
+  }
+  .testimonial-slider .testimonial-area {
+    padding-top: 0;
+    padding-bottom: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 0;
+  }
+  .testimonial-slider .testimonial-area .testimonial-item p {
+    font-size: 16px;
+    margin: 10px 0 12px 0;
+    line-height: 30px;
+  }
+  .testimonial-slider .testimonial-area .testimonial-content h3 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+  .testimonial-slider .owl-prev {
+    bottom: 0;
+    top: auto;
+  }
+  .testimonial-slider .owl-next {
+    bottom: 0;
+    top: auto;
+  }
+  .blog-title {
+    margin-bottom: 30px;
+  }
+  .blog-post-content {
+    padding: 20px 10px;
+  }
+  .footer-item {
+    margin-bottom: 0;
+  }
+  .footer-content {
+    margin-bottom: 10px;
+  }
+  .arround-img-wrapper .arround-img-1 img {
+    right: -15px;
+  }
+  .arround-img-wrapper .arround-img-2 {
+    top: -44px;
+    left: -20px;
+  }
+  .about-img-wrapper .about-img-1 img {
+    right: 0;
+  }
+  .about-img-wrapper .about-img-2 img {
+    top: 130px;
+    left: -15px;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  .sidebar .widget.widget-instagram-feed .instagram-feed li {
+    width: 80px;
+  }
+  .signup-form form .send-btn {
+    margin-bottom: 20px;
+  }
+  .login-form form .send-btn {
+    margin-bottom: 20px;
+  }
+  .single-tours-item .single-tours-content span {
+    font-size: 14px;
+    width: 56%;
+  }
+  .info-area .contact-box {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .video-banner .banner-video .video-text {
+    top: 48%;
+  }
+  .video-banner .main-banner-content {
+    padding-left: 20px;
+  }
+  .arround-features .no-padding {
+    padding-bottom: 0;
+  }
+  .tips-content h3 {
+    font-size: 40px;
+  }
+  .benefits-title h2 {
+    font-size: 45px;
+  }
+  .rest-image {
+    margin-bottom: 10px;
+  }
+  .luxury-item .restaurents-text {
+    position: relative;
+    margin-top: 18px;
+  }
+  .luxury-item .restaurents-text .restaurents-btn {
+    padding: 2px 5px;
+  }
+  .single-tours-section {
+    padding-bottom: 0;
+  }
+  .info-area .contact-box {
+    text-align: center;
+  }
+  .about-section {
+    padding-bottom: 100px;
+  }
+  .info-area .contact-box h4 {
+    font-size: 20px;
+  }
+  .info-area .contact-box p {
+    line-height: 20px;
+    font-weight: 600;
+  }
+}
+
+/* Responsive css */
+@media only screen and (min-width: 1800px) {
+  .testimonial-section {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+  .main-slides .main-banner {
+    height: 100vh;
+  }
+  .info-area {
+    padding-left: 50px;
+  }
+}
+
+/* Only for mainmenu */
+@media only screen and (max-width: 991px) {
+  .povo-mobile-nav {
+    display: block;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px !important;
+  }
+  .povo-mobile-nav .logo {
+    position: relative;
+    z-index: 9910;
+    left: 15px;
+    width: 50%;
+  }
+  .povo-mobile-nav .logo a {
+    display: inline-block;
+  }
+  .povo-nav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
