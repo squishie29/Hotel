@@ -3,16 +3,16 @@ class hotel{
 
 	private $idH;
 	private $nomHotel;
-	private $nbEtoil;
+	private $nbEtoils;
 	private $nbChambre;
 	private $photo;
     private $description;
     private $adresse;
     private $note;
-	function __construct($idH,$nomHotel,$nbEtoil,$nbChambre,$photo,$description,$adresse,$note){
+	function __construct($idH,$nomHotel,$nbEtoils,$nbChambre,$photo,$description,$adresse,$note){
 		$this->idH=$idH;
         $this->nomHotel=$nomHotel;
-        $this->nbEtoil=$nbEtoil;
+        $this->nbEtoils=$nbEtoils;
         $this->nbChambre=$nbChambre;
         $this->photo=$photo;
         $this->description=$description;
@@ -27,8 +27,8 @@ class hotel{
     function getnomHotel(){
 		return $this->nomHotel;
 	}
-    function getnbEtoil(){
-		return $this->nbEtoil;
+    function getnbEtoils(){
+		return $this->nbEtoils;
 	}
     function getnbChambre(){
 		return $this->nbChambre;
@@ -47,13 +47,15 @@ class hotel{
 	}
 
 
-	
+	function setidH($idH){
+		$this->idH=$idH;
+	}
 
 	function setnomHotel($nomHotel){
 		$this->nomHotel=$nomHotel;
 	}
-	function setnbEtoil($nbEtoil){
-		$this->nbEtoil=$nbEtoil;
+	function setnbEtoils($nbEtoils){
+		$this->nbEtoils=$nbEtoils;
 	}
     function setnbChambre($nbChambre){
 		$this->nbChambre=$nbChambre;

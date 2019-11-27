@@ -1,6 +1,8 @@
 <?PHP
 include "../config.php";
+require_once("../entities/hotel.php");
 class hotelC {
+    
 function afficherhotel ($hotel){
 		echo "Id hotel: ".$hotel->getidH()."<br>";
 		echo "Nom du hotel: ".$hotel->getnomHotel()."<br>";
@@ -78,8 +80,8 @@ function afficherhotel ($hotel){
             die('Erreur: '.$e->getMessage());
         }
 	}
-	function modifierhotel($hotel,$idH){
-		$sql="UPDATE hotel SET idH=:idHH, nomHotel=:nomHotel,nbEtoils=:nbEtoils,nbChambr=:nbChambr,photo=:photo,description=:description,adresse=:adresse,note=:note WHERE idH=:idH";
+	function modifierhotel($hotel){
+		$sql="UPDATE hotel SET idH=:idH, nomHotel=:nomHotel,nbEtoils=:nbEtoils,nbChambre=:nbChambre,photo=:photo,description=:description,adresse=:adresse,note=:note WHERE idH=:idH";
 		$db = config::getConnexion();
 try{
 
@@ -92,7 +94,7 @@ try{
         $description=$hotel->getdescription();
         $adresse=$hotel->getadresse();
         $note=$hotel->getnote();
-		$datas = array(':idHH'=>$idH, ':idH'=>$idH, ':nomHotel'=>$nomHotel,':nbEtoils'=>$nbEtoils,':nbChambre'=>$nbChambre,':photo'=>$photo,':description'=>$description,':adresse'=>$adresse,':note'=>$note);
+		$datas = array( ':idH'=>$idH, ':nomHotel'=>$nomHotel,':nbEtoils'=>$nbEtoils,':nbChambre'=>$nbChambre,':photo'=>$photo,':description'=>$description,':adresse'=>$adresse,':note'=>$note);
 		//lier variable => paramètre
 		$req->bindValue(':idH',$idH);
 		$req->bindValue(':nomHotel',$nomHotel);
