@@ -9,8 +9,7 @@ if (isset($_POST['search2']))
     }
     else 
     {
-        $listehotels=$hotel1C->rechercherListehotels();
-        echo 'ibda lawij';
+        $listehotels=$hotel1C->rechercherListehotels($_POST['search1']);
     }
 }
 else

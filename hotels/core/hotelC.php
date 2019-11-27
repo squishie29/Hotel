@@ -129,7 +129,8 @@ try{
         }
 	}
 	function rechercherListehotels($nomHotel){
-		$sql="SELECT * from hotel where nomHotel=$nomHotel";
+		$sql="SELECT * from hotel
+    where nomHotel LIKE '%$nomHotel%'";
 		$db = config::getConnexion();
 		try{
 		$liste=$db->query($sql);
