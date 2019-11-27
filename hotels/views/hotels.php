@@ -1,8 +1,20 @@
 <?PHP
 include "../core/hotelC.php";
 $hotel1C=new hotelC();
-$listehotels=$hotel1C->afficherhotels();
-
+if (isset($_POST['search2'])) 
+{
+    if ($_POST['search1'] == "")
+    {
+        $listehotels=$hotel1C->afficherhotels();
+    }
+    else 
+    {
+        $listehotels=$hotel1C->rechercherListehotels();
+        echo 'ibda lawij';
+    }
+}
+else
+  $listehotels=$hotel1C->afficherhotels();  
 
 //var_dump($listehotels->fetchAll());
 ?>
@@ -358,9 +370,9 @@ $listehotels=$hotel1C->afficherhotels();
                         </div>
 
                         <div class="tours-form">
-                            <form>
-                                <input type="text" class="form-control" placeholder="Search Tour">
-                                <button type="submit">
+                            <form name="f1" method="post">
+                                <input type="text" class="form-control" placeholder="Search Hotel" name="search1">
+                                <button type="submit" name="search2">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </form>
