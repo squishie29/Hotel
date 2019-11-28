@@ -1,0 +1,14 @@
+		hotel->chambre
+        
+        
+        idH->idCH
+        
+        
+       nomchambre->nbBed
+       
+       
+       nbetoils->typeC
+       
+        
+        
+        description->prix
