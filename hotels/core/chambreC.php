@@ -4,9 +4,9 @@ require_once("../entities/chambre.php");
 class chambreC {
     
 function afficherchambre ($chambre){
-		echo "Id chambre: ".$chambre->getidCh()."<br>";
+		echo "iddd: ".$chambre->getidCh()."<br>";
 		echo "Nom du chambre: ".$chambre->getnbBed()."<br>";
-        echo "id hotel: ".$chambre->idH()."<br>";
+        echo "id hotel: ".$chambre->getidH()."<br>";
 		echo "nombre d'etoil: ".$chambre->gettypeC()."<br>";
         echo "prix du chambre: ".$chambre->getprix()."<br>";
 	}
@@ -25,7 +25,7 @@ function afficherchambre ($chambre){
     */
 	function ajouterchambre($chambre){
 		$sql="insert into chambre (idCh,nbBed,idH,typeC,prix) values 
-(:idCh,:nbBed,:typeC,:prix)";
+(:idCh,:nbBed,:idH,:typeC,:prix)";
 		$db = config::getConnexion();
 		try{
         $req=$db->prepare($sql);
@@ -71,7 +71,7 @@ function afficherchambre ($chambre){
             die('Erreur: '.$e->getMessage());
         }
 	}
-	function modifierchambre($chambre){
+		function modifierchambre($chambre){
 		$sql="UPDATE chambre SET idCh=:idCh, nbBed=:nbBed,idH=:idH,typeC=:typeC,prix=:prix WHERE idCh=:idCh";
 		$db = config::getConnexion();
 try{
@@ -82,13 +82,13 @@ try{
         $idH=$chambre->getidH();
         $typeC=$chambre->gettypeC();
         $prix=$chambre->getprix();
-		$datas = array( ':idCh'=>$idCh, ':nbBed'=>$nbBed,':typeC'=>$typeC,':prix'=>$prix);
+		$datas = array( ':idCh'=>$idCh, ':nbBed'=>$nbBed,':idH'=>$idH,':typeC'=>$typeC,':prix'=>$prix);
 		//lier variable => paramètre
 		$req->bindValue(':idCh',$idCh);
 		$req->bindValue(':nbBed',$nbBed);
-        $req->bindValue(':idH',$idH);
+		$req->bindValue(':idH',$idH);
 		$req->bindValue(':typeC',$typeC);
-        $req->bindValue(':prix',$prix);
+		$req->bindValue(':prix',$prix);
 		
 		
             $s=$req->execute();

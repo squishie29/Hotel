@@ -6,8 +6,8 @@ class chambre{
     private $idH;
 	private $typeC;
     private $prix;
-	function __construct($idCH,$nbBed,$idH,$typeC,$prix){
-		$this->idCH=$idCH;
+	function __construct($idCh,$nbBed,$idH,$typeC,$prix){
+		$this->idCh=$idCh;
         $this->nbBed=$nbBed;
         $this->idH=$idH;
         $this->typeC=$typeC;

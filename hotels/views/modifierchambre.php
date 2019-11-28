@@ -11,18 +11,19 @@ include "../core/chambreC.php";
 	foreach($result as $row){
 		$idCh=$row['idCh'];
 		$nbBed=$row['nbBed'];
-        $nbBed=$row['idH'];
+        $idH=$row['idH'];
 		$typeC=$row['typeC'];
-		$prix=$row['prix'];}
+		$prix=$row['prix'];
+    }
    
 ?>
 <link rel="stylesheet" href="assets/css/ajouter.css">
 <div class="container">  
-  <form method="post" action="Cmodifierchambre.php" id="contact">
+  <form method="post" action="cmodifierchambre.php" id="contact">
     <h3>Modifier un chambre</h3>
     <h4>Modifier un chambre de la base de donner</h4>
       <fieldset>
-      <input placeholder="Id de chambre" type="text" name="idCh" value="<?PHP echo $idCh ?>"   readonly>
+      <input placeholder="Id de chambre" type="text" name="idCh" value="<?PHP echo $idCh ?>"  readonly >
     </fieldset>
     <fieldset>
       <input placeholder="Nombre de lits dans la chambre" type="text" name="nbBed" value="<?PHP echo $nbBed ?>"  >
@@ -37,7 +38,7 @@ include "../core/chambreC.php";
       <textarea placeholder="prix du chambre" tabindex="5" type="text" name="prix" value="<?PHP echo $prix ?>"  ><?PHP echo $prix ?></textarea>
     </fieldset>
     <fieldset>
-      <button type="submit" name="modifier" value="modifier">Modifier</button>
+      <button type="submit" name="modifier" value="modifier">modifier</button>
     </fieldset>
   </form>
  
