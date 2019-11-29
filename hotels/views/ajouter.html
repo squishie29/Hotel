@@ -14,7 +14,7 @@
       <input placeholder="Nom de Hotel" type="text" tabindex="1" name="nomHotel" required >
     </fieldset>
     <fieldset>
-      <input placeholder="Nombre d'etoils" type="text" pattern="[1-7]{1}" tabindex="2" name="nbEtoils" required>
+      <input placeholder="Nombre d'etoils" type="text" pattern="[0-9]{1,7}" tabindex="2" name="nbEtoils" required>
     </fieldset>
     <fieldset>
       <input placeholder="Nombre de chambres" type="text" tabindex="3" name="nbChambre" required>
@@ -29,7 +29,7 @@
       <input placeholder="Adresse du hotel" type="text" tabindex="4" name="adresse" required>
     </fieldset>
       <fieldset>
-      <input placeholder="Note du Hotel" type="text" pattern="[0-9]{2}" tabindex="4" name="note" required>
+      <input placeholder="Note du Hotel" type="text" pattern="[0-9]{1,10}" tabindex="4" name="note" required>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" >Submit</button>

@@ -26,16 +26,16 @@ include "../core/chambreC.php";
       <input placeholder="Id de chambre" type="text" name="idCh" value="<?PHP echo $idCh ?>"  readonly >
     </fieldset>
     <fieldset>
-      <input placeholder="Nombre de lits dans la chambre" type="text" name="nbBed" value="<?PHP echo $nbBed ?>"  >
+      <input placeholder="Nombre de lits dans la chambre" type="text" name="nbBed" value="<?PHP echo $nbBed ?>" pattern="[0-9]" >
     </fieldset>
       <fieldset>
-      <input placeholder="Id du Hotel" type="text" name="idH" value="<?PHP echo $idH ?>"  >
+      <input placeholder="Id du Hotel" type="text" pattern="[0-9]" name="idH" value="<?PHP echo $idH ?>"  >
     </fieldset>
     <fieldset>
       <input placeholder="Type du chambre" type="text" name="typeC" value="<?PHP echo $typeC ?>" >
     </fieldset>
     <fieldset>
-      <textarea placeholder="prix du chambre" tabindex="5" type="text" name="prix" value="<?PHP echo $prix ?>"  ><?PHP echo $prix ?></textarea>
+      <textarea placeholder="prix du chambre" tabindex="5" type="text" pattern="[0-9]" name="prix" value="<?PHP echo $prix ?>"  ><?PHP echo $prix ?></textarea>
     </fieldset>
     <fieldset>
       <button type="submit" name="modifier" value="modifier">modifier</button>
