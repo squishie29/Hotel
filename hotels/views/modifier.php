@@ -40,7 +40,7 @@ include "../core/hotelC.php";
       <input placeholder="lien de photo" type="text" name="photo" value="<?PHP echo $photo ?>"  >
     </fieldset>
     <fieldset>
-      <textarea placeholder="Description du hotel" tabindex="5" type="text" name="description" value="<?PHP echo $description ?>"  ><?PHP echo $description ?></textarea>
+      <textarea placeholder="Descripdddtion du hotel" tabindex="5" type="text" name="description" value="<?PHP echo $description ?>"  ><?PHP echo $description ?></textarea>
     </fieldset>
       <fieldset>
       <input placeholder="Adresse du hotel" type="text" name="adresse" value="<?PHP echo $adresse ?>">
