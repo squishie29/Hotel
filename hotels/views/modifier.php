@@ -46,7 +46,7 @@ include "../core/hotelC.php";
       <input placeholder="Adresse du hotel" type="text" name="adresse" value="<?PHP echo $adresse ?>">
     </fieldset>
       <fieldset>
-      <input placeholder="Note du Hotel" type="text" pattern="[0-9]{1,10}" name="note" value="<?PHP echo $note ?>" >
+      <input placeholder="Note du Hotel" type="text" pattern="^([1-9]|1[0])$" name="note" value="<?PHP echo $note ?>" >
     </fieldset>
     <fieldset>
       <button type="submit" name="modifier" value="modifier">Modifier</button>

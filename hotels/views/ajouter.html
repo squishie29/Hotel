@@ -8,7 +8,7 @@
     <h3>Ajouter un Hotel</h3>
     <h4>Ajouter un hotel dans la base de donner</h4>
       <fieldset>
-      <input placeholder="Id de Hotel" type="text" pattern="[0-9]" tabindex="1" name="idH" required autofocus>
+      <input placeholder="Id de Hotel" type="text" pattern="^[0-9]*$" tabindex="1" name="idH" required autofocus>
     </fieldset>
     <fieldset>
       <input placeholder="Nom de Hotel" type="text" tabindex="1" name="nomHotel" required >
@@ -29,7 +29,7 @@
       <input placeholder="Adresse du hotel" type="text" tabindex="4" name="adresse" required>
     </fieldset>
       <fieldset>
-      <input placeholder="Note du Hotel" type="text" pattern="[0-9]{1,10}" tabindex="4" name="note" required>
+      <input placeholder="Note du Hotel" type="text" pattern="^([1-9]|1[0])$" tabindex="4" name="note" required>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" >Submit</button>
