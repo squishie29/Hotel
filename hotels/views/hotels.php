@@ -340,6 +340,9 @@ else
                                                 <?PHP echo $row['note']; ?>/10
                                             </i>
                                         </li>
+                                        <li>
+                                            <a href="reserver.php"><input type="button" value="reserver" class ="form-control"></a>
+                                        </li>
                                     </ul>
 
                                     <h3>
