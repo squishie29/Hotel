@@ -315,6 +315,7 @@ else
     <!-- End Page banner -->
 
     <!-- Start Tours Section -->
+    <form action="single-hotels.php" id="f22">
     <section class="tours-section">
         <div class="container">
             <div class="row">
@@ -324,7 +325,7 @@ else
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="tours-item">
                                 <div class="tours-image">
-                                    <a href="#">
+                                    <a href="javascript:{}" onclick="document.getElementById('f22').submit(); return false;" value="<?PHP echo $row['idH']; ?> ">
                                         <img class="imghotel" src="../entities/img/<?PHP echo $row['photo']; ?>">
                                     </a>
                                 </div>
@@ -346,7 +347,7 @@ else
                                     </ul>
 
                                     <h3>
-                                        <a href="#">
+                                        <a href="javascript:{}" onclick="document.getElementById('f22').submit(); return false;" value="<?PHP echo $row['idH']; ?> ">
                                             <?PHP echo $row['nomHotel']; ?></a>
                                     </h3>
                                     <p>
@@ -360,6 +361,7 @@ else
                         <?php
                             }
                         ?>
+                        </form>
                     </div>
 
                 </div>
