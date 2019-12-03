@@ -382,12 +382,12 @@
                             </div>
 
                             <div class="tours-form">
-                                <form>
-									<input type="text" class="form-control" placeholder="Search Tour">
-									<button type="submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-								</form>
+                                <form name="f1" method="post" action="hotels.php">
+                                <input type="text" class="form-control" placeholder="Search Hotel" name="search1">
+                                <button type="submit" name="search2">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
                             </div>
 
                             <ul class="tours-where">
