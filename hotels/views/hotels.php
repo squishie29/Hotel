@@ -325,7 +325,12 @@ else
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="tours-item">
                                 <div class="tours-image">
+<<<<<<< Updated upstream
                                     <a href="javascript:{}" onclick="document.getElementById('f22').submit(); return false;" value="<?PHP echo $row['idH']; ?> ">
+=======
+                                    <button style="background-color:transparent;border:none; " type="submit" value="envoyer">
+                                        <a name="aa" value="<?PHP echo $row['idH']; ?>">
+>>>>>>> Stashed changes
                                         <img class="imghotel" src="../entities/img/<?PHP echo $row['photo']; ?>">
                                     </a>
                                 </div>
