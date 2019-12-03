@@ -38,11 +38,10 @@
 <?PHP
 include "../entities/hotel.php";
 include "../core/hotelC.php";
-
 	$hotel1C=new hotelC();
     $hotel2C=new hotelC();
     $result2=$hotel1C->afficherhotels();
-    $result=$hotel1C->recupererhotel(1);
+    $result=$hotel1C->recupererhotel($_POST['idH']);
 	foreach($result as $row){
 		$idH=$row['idH'];
 		$nomHotel=$row['nomHotel'];
