@@ -325,9 +325,10 @@ else
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="tours-item">
                                 <div class="tours-image">
-                                    <a href="javascript:{}" onclick="document.getElementById('f22').submit(); return false;" value="<?PHP echo $row['idH']; ?> ">
+                                    <a name="idH" href="javascript:{}" onclick="document.getElementById('f22').submit(); return false;" value="<?PHP echo $row['idH']; ?> ">
                                         <img class="imghotel" src="../entities/img/<?PHP echo $row['photo']; ?>">
                                     </a>
+                                    <input type="submit" value="<?PHP echo $row['idH']; ?>" name="<?PHP echo $row['idH']; ?>" hidden>
                                 </div>
 
                                 <div class="tours-content">

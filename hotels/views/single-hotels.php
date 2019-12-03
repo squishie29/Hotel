@@ -35,7 +35,26 @@
     </head>
 
     <body>
+<?PHP
+include "../entities/hotel.php";
+include "../core/hotelC.php";
 
+	$hotel1C=new hotelC();
+    $hotel2C=new hotelC();
+    $result2=$hotel1C->afficherhotels();
+    $result=$hotel1C->recupererhotel(1);
+	foreach($result as $row){
+		$idH=$row['idH'];
+		$nomHotel=$row['nomHotel'];
+		$nbEtoils=$row['nbEtoils'];
+        $nbChambre=$row['nbChambre'];
+		$photo=$row['photo'];
+		$description=$row['description'];
+		$adresse=$row['adresse'];
+		$note=$row['note'];}
+        
+   
+?>
         <!-- Start Loader -->
 		<div class="preloader">
             <div class="spinner"></div>
@@ -306,69 +325,44 @@
                             <div class="col-lg-6">
                                 <div class="single-tours-item">
                                     <div class="single-tours-image">
-                                        <img src="assets/img/single-tours/1.png" alt="image">
+                                        <img src="../entities/img/<?PHP echo $row['photo']; ?>">
                                     </div>
 
                                     <div class="single-tours">
                                         <ul class="tours-list">
                                             <li>
-                                                <i class="fa fa-calendar-alt"></i>
-                                                1
-                                            </li>
+                                            <i class="fas fa-star"></i>
+                                            <?PHP echo $row['nbEtoils']; ?>
+                                        </li>
 
                                             <li>
-                                                <i class="fa fa-user"></i>
-                                                13+
-                                            </li>
+                                            <i class="fa fa-user">
+                                                <?PHP echo $row['note']; ?>/10
+                                            </i>
                                         </ul>
                                     </div>   
 
-                                    <ul class="single-tours-content">
+                                    <ul class="single-tours-content" style="height:20vh;">
                                         <li>
-                                            Destination
-                                            <span>Spain</span>
+                                            ADDRESS
+                                            <span><?PHP echo $row['adresse']; ?></span>
                                         </li>
 
-                                        <li>
-                                            Departure
-                                            <span>Included</span>
-                                        </li>
-
-                                        <li>
-                                            Departure Time
-                                            <span>Approximate 8:30 am</span>
-                                        </li>
-
-                                        <li>
-                                            Returen Time
-                                            <span>Approximate 8:30 am</span>
-                                        </li>
-
-                                        <li>
-                                            Dress Code
-                                            <span>Casual comfotable light</span>
-                                        </li>
-
-                                        <li>
-                                            Included
-                                            <span><i class="fa fa-chevron-circle-down"></i>5 star Recommandation</span>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="single-details">
-                                    <h2>Madrid<span>/(per person)</span></h2>
+                                    <h2><?PHP echo $nomHotel ?><span>/(per person)</span></h2>
                                     <ul class="details-list">
-                                        <li>$1100</li>
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
                                         <li>1 Review</li>
                                     </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maec Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maec </p>
+                                    <p><?PHP echo $description ?></p>
                                 </div>
                             </div>
                         </div>
@@ -390,57 +384,7 @@
 								</form>
                             </div>
 
-                            <ul class="tours-where">
-                                <li>
-                                    <i class="flaticon-safari"></i>
-                                    Where To
-                                </li>
-
-                                <li class="text-left">
-                                    <i class="flaticon-calendar"></i>
-                                    Month
-                                </li>
-                            </ul>
-
-                            <div class="tours-price">
-                                <h3>Filter By Price</h3>
-                                <p>Price: $450-$3600</p>
-
-                                <ul class="price-list">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            Popular
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        <label class="form-check-label" for="exampleRadios2">
-                                            Latest
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
-                                        <label class="form-check-label" for="exampleRadios3">
-                                            Europe
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
-                                        <label class="form-check-label" for="exampleRadios4">
-                                            Wines
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option2">
-                                        <label class="form-check-label" for="exampleRadios5">
-                                            Trendd
-                                        </label>
-                                    </div>
+                           
                                 </ul>
                             </div>
 
@@ -460,26 +404,18 @@
                 <div class="form-gallery-content">
                     <h3>Form Gallery</h3>
                 </div>
+                            
 
                 <div class="row">
+                    <?PHP $i=0; foreach($result2 as $row2){ $i=$i+1;?>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="form-gallery-image">
-                            <img src="assets/img/tours/1.png" alt="image">
+                            <img src="../entities/img/<?PHP echo $row2['photo']; ?>">
                         </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="form-gallery-image">
-                            <img src="assets/img/tours/2.png" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-                        <div class="form-gallery-image">
-                            <img src="assets/img/tours/3.png" alt="image">
-                        </div>
-                    </div>
+<?PHP if ($i==3) break; } ?>
                 </div>
+                
             </div>
         </section>
         <!-- End Form Gallery Section -->
