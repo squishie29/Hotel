@@ -400,20 +400,7 @@ include "../core/hotelC.php";
         <!-- Start Form Gallery Section -->
         <section class="form-gallery-section">
             <div class="container">
-                <div class="form-gallery-content">
-                    <h3>Form Gallery</h3>
-                </div>
-                            
-
-                <div class="row">
-                    <?PHP $i=0; foreach($result2 as $row2){ $i=$i+1;?>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="form-gallery-image">
-                            <img src="../entities/img/<?PHP echo $row2['photo']; ?>">
-                        </div>
-                    </div>
-<?PHP if ($i==3) break; } ?>
-                </div>
+                <?php include "reserver.php" ?>
                 
             </div>
         </section>

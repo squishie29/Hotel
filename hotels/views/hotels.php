@@ -323,18 +323,20 @@ else
                     <div class="row">
                         <?PHP foreach($listehotels as $row){?>
                         <div class="col-lg-6 col-md-6 col-sm-6">
+                            <form action="single-hotels.php" method="post">
+                                <button style="background-color:transparent;border:none;" type="submit" value="envoyer">
                             <div class="tours-item">
-                                <form action="single-hotels.php" method="post">
+                                
                                 <div class="tours-image">
-                                    <button style="background-color:transparent;border:none;" type="submit" value="envoyer">
+                                    
                                         <a name="aa" value="<?PHP echo $row['idH']; ?>">
                                         <img class="imghotel" src="../entities/img/<?PHP echo $row['photo']; ?>">
                                         </a>
-                                        </button>
+                                        
                                     
                                     <input type="text" name="idH" value="<?PHP echo $row['idH']; ?>" hidden>
                                 </div>
-                                </form>
+                                
 
                                 <div class="tours-content">
                                     <ul class="tours-list">
@@ -347,13 +349,10 @@ else
                                                 <?PHP echo $row['note']; ?>/10
                                             </i>
                                         </li>
-                                        <li>
-                                            <a href="reserver.php"><input type="button" value="reserver" class ="form-control"></a>
-                                        </li>
                                     </ul>
 
                                     <h3>
-                                        <a href="javascript:{}" onclick="document.getElementById('f22').submit(); return false;" value="<?PHP echo $row['idH']; ?> ">
+                                        <a value="<?PHP echo $row['idH']; ?> ">
                                             <?PHP echo $row['nomHotel']; ?></a>
                                     </h3>
                                     <p>
@@ -363,6 +362,8 @@ else
 
                                 </div>
                             </div>
+                                    </button>
+                                </form>
                         </div>
                         <?php
                             }
