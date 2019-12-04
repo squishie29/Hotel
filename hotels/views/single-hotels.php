@@ -38,11 +38,16 @@
 <?PHP
 include "../entities/hotel.php";
 include "../core/hotelC.php";
+include "../entities/chambre.php";
+include "../core/chambreC.php";
 	$hotel1C=new hotelC();
-    $hotel2C=new hotelC();
+    $hotel2C=new hotelC();  
+    $chambre1C=new chambreC();
+    $result3=$chambre1C->afficherchambres(); 
     $result2=$hotel1C->afficherhotels();
     $result=$hotel1C->recupererhotel($_POST['idH']);
-	foreach($result as $row){
+	foreach($result as $row)
+    {
 		$idH=$row['idH'];
 		$nomHotel=$row['nomHotel'];
 		$nbEtoils=$row['nbEtoils'];
@@ -50,7 +55,8 @@ include "../core/hotelC.php";
 		$photo=$row['photo'];
 		$description=$row['description'];
 		$adresse=$row['adresse'];
-		$note=$row['note'];}
+		$note=$row['note'];
+    }   
         
    
 ?>
@@ -362,6 +368,26 @@ include "../core/hotelC.php";
                                         <li>1 Review</li>
                                     </ul>
                                     <p><?PHP echo $description ?></p>
+                                    <h3>Prix du chambre:</h3>
+<table>
+<thead>
+<tr>
+<th class="text-left">Type</th>
+<th class="text-left">Prix</th>
+</tr>
+</thead>
+<tbody class="">
+ <?PHP
+                                        foreach($result3 as $row2)
+                                            {?>
+<tr>
+<td class="text-left"><?PHP echo $row2['typeC'];?></td>
+<td class="text-left"><?PHP echo $row2['prix'];?></td>
+</tr>
+    <?PHP }?>
+</tbody>
+</table>
+
                                 </div>
                             </div>
                         </div>
