@@ -355,9 +355,6 @@ else
                                         <a value="<?PHP echo $row['idH']; ?> ">
                                             <?PHP echo $row['nomHotel']; ?></a>
                                     </h3>
-                                    <p >
-                                        <?PHP echo $row['description']; ?> 
-                                    </p>
 
                                 </div>
                             </div>
