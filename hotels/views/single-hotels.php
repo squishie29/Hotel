@@ -6,7 +6,7 @@
         <!-- REQUIRED META TAGS -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <link rel="stylesheet" href="assets/css/el.css">
         <!-- Bootstrap Min CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- Owl Carousel Min CSS -->
@@ -369,7 +369,7 @@ include "../core/chambreC.php";
                                     </ul>
                                     <p style="word-wrap: break-word;"><?PHP echo $description ?></p>
                                     <h3>Prix du chambre:</h3>
-<table>
+<table class="tabprix">
 <thead>
 <tr>
 <th class="text-left">Type</th>
@@ -382,7 +382,7 @@ include "../core/chambreC.php";
                                             {?>
 <tr>
 <td class="text-left"><?PHP echo $row2['typeC'];?></td>
-<td class="text-left"><?PHP echo $row2['prix'];?></td>
+<td class="text-left"><?PHP echo $row2['prix'];?> TND</td>
 </tr>
     <?PHP }?>
 </tbody>
