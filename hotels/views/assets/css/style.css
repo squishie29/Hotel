@@ -115,6 +115,11 @@ img {
   margin: -10px 0 20px 0;
   text-transform: capitalize;
 }
+.para1{
+    width: 5px;
+    border: red solid 1px;
+    text-overflow:ellipsis;
+}
 
 .section-title p {
   font-size: 14px;

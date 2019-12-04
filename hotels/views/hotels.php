@@ -324,7 +324,7 @@ else
                         <?PHP foreach($listehotels as $row){?>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <form action="single-hotels.php" method="post">
-                                <button style="background-color:transparent;border:none;" type="submit" value="envoyer">
+                                <button style="background-color:transparent;border:none;width:100%;" type="submit" value="envoyer">
                             <div class="tours-item">
                                 
                                 <div class="tours-image">
@@ -338,7 +338,7 @@ else
                                 </div>
                                 
 
-                                <div class="tours-content">
+                                <div class="tours-content" style="word-wrap: break-word;">
                                     <ul class="tours-list">
                                         <li>
                                             <i class="fas fa-star"></i>
@@ -355,10 +355,9 @@ else
                                         <a value="<?PHP echo $row['idH']; ?> ">
                                             <?PHP echo $row['nomHotel']; ?></a>
                                     </h3>
-                                    <p>
-                                        <?PHP echo $row['description']; ?>
+                                    <p >
+                                        <?PHP echo $row['description']; ?> 
                                     </p>
-
 
                                 </div>
                             </div>
