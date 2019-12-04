@@ -35,7 +35,7 @@ $listehotels=$hotel1C->afficherhotels();
                     </div>
                 </div>
             </div>
-            <table class="table table-bordered">
+            <table class="table table-bordered" style="word-break: break-word;">
                 <thead>
                     <tr>
                         <th>Id Hotel</th>
