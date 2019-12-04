@@ -8,7 +8,7 @@ $chambreX=new chambre($_POST['idCh'],$_POST['nbBed'],$_POST['idH'],$_POST['typeC
 
     $chambre1->modifierchambre($chambreX);
 
-	header('Location: managechambre.php');
+	header('Location: Bchambre.php');
 }
 else echo 'le';        
 ?>

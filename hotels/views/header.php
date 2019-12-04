@@ -99,10 +99,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseHotels">
             <li>
-              <a href="gestionReservation.php">Hotels</a>
+              <a href="Bhotels.php">Hotels</a>
             </li>
             <li>
-              <a href="cards.html">Chambres</a>
+              <a href="Bchambres.php">Chambres</a>
             </li>
           </ul>
         </li>

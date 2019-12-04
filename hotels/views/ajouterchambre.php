@@ -11,7 +11,7 @@ if (isset($_POST['idCh']) ){
 $chambreX=new chambre((int)$_POST['idCh'],$_POST['nbBed'],$_POST['idH'],$_POST['typeC'],$_POST['prix']);
 
 $chambre1->ajouterchambre($chambreX);
-header('Location: managechambre.php');
+header('Location: Bchambre.php');
 
 }
 else{
