@@ -43,7 +43,7 @@ include "../core/chambreC.php";
 	$hotel1C=new hotelC();
     $hotel2C=new hotelC();  
     $chambre1C=new chambreC();
-    $result3=$chambre1C->afficherchambres(); 
+    $result3=$chambre1C->recupererchambre($_POST['idH']); 
     $result2=$hotel1C->afficherhotels();
     $result=$hotel1C->recupererhotel($_POST['idH']);
 	foreach($result as $row)
