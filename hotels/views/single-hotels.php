@@ -367,7 +367,7 @@ include "../core/chambreC.php";
                                         <li><i class="fa fa-star"></i></li>
                                         <li>1 Review</li>
                                     </ul>
-                                    <p><?PHP echo $description ?></p>
+                                    <p style="word-wrap: break-word;"><?PHP echo $description ?></p>
                                     <h3>Prix du chambre:</h3>
 <table>
 <thead>
