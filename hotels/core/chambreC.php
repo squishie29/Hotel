@@ -1,6 +1,6 @@
 <?PHP
-require_once ("../config.php");
-require_once ("../entities/chambre.php");
+include "../config.php";
+require_once("../entities/chambre.php");
 class chambreC {
     
 function afficherchambre ($chambre){
@@ -102,8 +102,8 @@ try{
         }
 		
 	}
-	function recupererchambre($idH){
-		$sql="SELECT * from chambre where idH=$idH";
+	function recupererchambre($idCh){
+		$sql="SELECT * from chambre where idCh=$idCh";
 		$db = config::getConnexion();
 		try{
 		$liste=$db->query($sql);

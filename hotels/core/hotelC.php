@@ -1,5 +1,5 @@
 <?PHP
-require_once("../config.php");
+include "../config.php";
 require_once("../entities/hotel.php");
 class hotelC {
     
