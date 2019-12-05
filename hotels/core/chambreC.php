@@ -1,6 +1,6 @@
 <?PHP
 require_once("../config.php");
-include("../entities/chambre.php");
+include_once("../entities/chambre.php");
 class chambreC {
     
 function afficherchambre ($chambre){
