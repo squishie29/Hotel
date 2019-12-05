@@ -23,13 +23,18 @@ include "../core/chambreC.php";
     <h3>Modifier un chambre</h3>
     <h4>Modifier un chambre de la base de donner</h4>
       <fieldset>
-      <input placeholder="Id de chambre" type="text" name="idCh" value="<?PHP echo $idCh ?>"  readonly >
+      <input placeholder="Id de chambre" type="text" name="idCh" value="<?PHP echo $idCh; ?>"  readonly >
     </fieldset>
     <fieldset>
       <input placeholder="Nombre de lits dans la chambre" type="text" name="nbBed" value="<?PHP echo $nbBed ?>" pattern="^[0-9]*$" >
     </fieldset>
       <fieldset>
       <input placeholder="Id du Hotel" type="text" pattern="^[0-9]*$" name="idH" value="<?PHP echo $idH ?>"  >
+          <select name="idH">
+              <?PHP foreach($listehotels as $row2){ ?>
+                   <option><?PHP echo $row2['idH']; ?></option>
+                       <?PHP } ?>
+          </select>
     </fieldset>
     <fieldset>
       <input placeholder="Type du chambre" type="text" name="typeC" value="<?PHP echo $typeC ?>" >
