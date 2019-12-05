@@ -1,5 +1,4 @@
 <?PHP
-require_once ("../config.php");
 require_once("../entities/chambre.php");
 class chambreC {
     
