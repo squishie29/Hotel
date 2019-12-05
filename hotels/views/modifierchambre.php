@@ -1,5 +1,6 @@
 <html>
 <head>
+    <script src="assets/js/valid.js"></script>
 </head>
 <body>
     <?PHP
@@ -24,7 +25,7 @@ include "../core/hotelC.php";
 ?>
 <link rel="stylesheet" href="assets/css/ajouter.css">
 <div class="container">  
-  <form method="post" action="cmodifierchambre.php" id="contact">
+  <form method="post" action="cmodifierchambre.php" id="contact" onSubmit="return formValidation();" name='registration'>
     <h3>Modifier un chambre</h3>
     <h4>Modifier un chambre de la base de donner</h4>
       <fieldset>
