@@ -2,6 +2,13 @@
 <head>
 </head>
 <body>
+ <?PHP
+    include("../entities/hotel.php");
+include "../core/hotelC.php";
+    
+    $hotel1C=new hotelC();
+    $listehotels=$hotel1C->afficherhotels();
+    ?>
 <link rel="stylesheet" href="assets/css/ajouter.css">
 <div class="container">  
   <form id="contact" action="ajouterchambre.php" method="post">
@@ -14,7 +21,11 @@
       <input placeholder="Nombre de lits du chambre" pattern="^[0-9]*$" type="text" tabindex="1" name="nbBed" required >
     </fieldset>
       <fieldset>
-      <input placeholder="id du hotel" type="text" pattern="^[0-9]*$" tabindex="1" name="idH" required >
+          <select name="idH">
+              <?PHP foreach($listehotels as $row2){ ?>
+                   <option><?PHP echo $row2['idH']; ?></option>
+                       <?PHP } ?>
+          </select>
     </fieldset>
     <fieldset>
       <input placeholder="Type du chambre" type="text" tabindex="2" name="typeC" required>

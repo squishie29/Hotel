@@ -29,7 +29,7 @@ $listechambres=$chambre1C->afficherchambres();
                 <div class="row">
                     <div class="col-sm-8"><h2>Manage <b>chambres</b></h2></div>
                     <div class="col-sm-4">
-                        <form id="form3" method="post" action="ajouterchambre.html">
+                        <form id="form3" method="post" action="ajouterchambre1.php">
                         <button type="submit" class="btn btn-info add-new" value="Ajouter"><i class="fa fa-plus"></i> Ajouter</button>
                         </form>
                     </div>
