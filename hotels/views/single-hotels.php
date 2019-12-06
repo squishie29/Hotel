@@ -362,11 +362,7 @@ include "../core/chambreC.php";
                                 <div class="single-details">
                                     <h2><?PHP echo $nomHotel ?><span>/(per person)</span></h2>
                                     <ul class="details-list">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li>1 Review</li>
+                                        <li><h3>Description du hotel:</h3></li>
                                     </ul>
                                     <p style="word-wrap: break-word;"><?PHP echo $description ?></p>
                                     <h3>Prix du chambre:</h3>
