@@ -1,5 +1,6 @@
 <HTML>
 <head>
+    <script src="assets/js/validc.js"></script>
 </head>
 <body>
  <?PHP
@@ -11,7 +12,7 @@ include "../core/hotelC.php";
     ?>
 <link rel="stylesheet" href="assets/css/ajouter.css">
 <div class="container">  
-  <form id="contact" action="ajouterchambre.php" method="post">
+  <form id="contact" action="ajouterchambre.php" method="post" onSubmit="return formValidation();" name='registration'>
     <h3>Ajouter une Chambre</h3>
     <h4>Ajouter un Chambre dans la base de donner</h4>
       <fieldset>

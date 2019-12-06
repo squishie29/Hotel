@@ -1,6 +1,6 @@
 <html>
 <head>
-    <script src="assets/js/valid.js"></script>
+    <script src="assets/js/validc.js"></script>
 </head>
 <body>
     <?PHP
