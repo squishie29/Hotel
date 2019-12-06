@@ -102,8 +102,8 @@ try{
         }
 		
 	}
-	function recupererchambre($idCh){
-		$sql="SELECT * from chambre where idCh=$idCh";
+	function recupererchambre($idH){
+		$sql="SELECT * from chambre where idH=$idH";
 		$db = config::getConnexion();
 		try{
 		$liste=$db->query($sql);
