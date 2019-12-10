@@ -32,6 +32,12 @@
 
         <!-- TITLE -->
         <title>Povo - Travel Agency & Tourism HTML Template</title>
+    <style>
+      #map {
+        height: 400px;
+          width: 500px;
+      }
+    </style>
     </head>
 
     <body>
@@ -371,6 +377,7 @@ include "../core/chambreC.php";
 <tr>
 <th class="text-left">Type</th>
 <th class="text-left">Prix</th>
+    <div id="map"></div>
 </tr>
 </thead>
 <tbody class="">
@@ -384,6 +391,18 @@ include "../core/chambreC.php";
     <?PHP }?>
 </tbody>
 </table>
+                                     
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_U_wPNexFuRcZZfx3EAhZJxPTxqyey_o&callback=initMap"
+    async defer></script>
 
                                 </div>
                             </div>
@@ -407,7 +426,6 @@ include "../core/chambreC.php";
                             </div>
 
                            
-                                </ul>
                             </div>
 
                             <div class="tours-btn">
