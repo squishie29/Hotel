@@ -34,8 +34,10 @@
         <title>Povo - Travel Agency & Tourism HTML Template</title>
     <style>
       #map {
-        height: 400px;
-          width: 500px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        height: 60vh;
+          width: 100%;
       }
     </style>
     </head>
@@ -377,7 +379,7 @@ include "../core/chambreC.php";
 <tr>
 <th class="text-left">Type</th>
 <th class="text-left">Prix</th>
-    <div id="map"></div>
+    
 </tr>
 </thead>
 <tbody class="">
@@ -388,9 +390,12 @@ include "../core/chambreC.php";
 <td class="text-left"><?PHP echo $row2['typeC'];?></td>
 <td class="text-left"><?PHP echo $row2['prix'];?> TND</td>
 </tr>
+    
     <?PHP }?>
 </tbody>
 </table>
+                              
+                                    
                                      
     <script>
       var map;
@@ -405,9 +410,12 @@ include "../core/chambreC.php";
     async defer></script>
 
                                 </div>
+                                 <div id="map"></div> 
                             </div>
+                            
                         </div>
                     </div>
+                    
 
                     <div class="col-lg-4">
                         <div class="tours-sidebar">
