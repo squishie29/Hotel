@@ -401,7 +401,7 @@ include "../core/chambreC.php";
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
+          center: {lat: 36.7948624, lng: 10.0732369},
           zoom: 8
         });
       }
