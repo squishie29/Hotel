@@ -140,6 +140,19 @@ try{
             die('Erreur: '.$e->getMessage());
         }
 	}
+    
+    function afficheASC(){
+		$sql="SELECT * from hotel
+    order by idH DESC";
+		$db = config::getConnexion();
+		try{
+		$liste=$db->query($sql);
+		return $liste;
+		}
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+	}
 }
 
 ?>
