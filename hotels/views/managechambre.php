@@ -15,6 +15,10 @@ $listechambres=$chambre1C->afficherchambres();
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="application/javascript">$(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});</script>
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,6 +27,7 @@ $listechambres=$chambre1C->afficherchambres();
 
 </head>
 <body>
+    
     <div class="container">
         <div class="table-wrapper">
             <div class="table-title">
@@ -35,7 +40,7 @@ $listechambres=$chambre1C->afficherchambres();
                     </div>
                 </div>
             </div>
-            <table class="table table-bordered">
+            <table class="table table-bordered" id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th>Id chambre</th>
@@ -64,9 +69,7 @@ $listechambres=$chambre1C->afficherchambres();
                             </form>
                         </td>
                         <?PHP } ?>
-                    </tr>
-
-                    </tr>      
+                    </tr>     
                 </tbody>
             </table>
         </div>
