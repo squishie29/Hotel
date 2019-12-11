@@ -15,63 +15,92 @@ if (isset($_GET["page"])) {
 	$page=1;
 	};  
 $start_from = ($page-1) * $limit;  
-if(isset($_POST['ASC']) or isset($_POST['DSC'])or isset($_POST['ASCn'])or isset($_POST['DSCn'])or isset($_POST['ASCe'])or isset($_POST['DSCe'])or isset($_POST['ASCc'])or isset($_POST['DSCc'])or isset($_POST['ASCp'])or isset($_POST['DSCp']))
+if(isset($_POST['ASC']) or isset($_POST['DSC']))
 {
   if(isset($_POST['DSC']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idCh DESC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH DESC LIMIT $start_from, $limit");
   }
   else if(isset($_POST['ASC']))
-  {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idCh ASC LIMIT $start_from, $limit");
-      
-  }
-    else if(isset($_POST['ASCn']))
-  {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY nbBed ASC LIMIT $start_from, $limit");
-      
-  }
-    else if(isset($_POST['DSCn']))
-  {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY nbBed DESC LIMIT $start_from, $limit");
-      
-  }
-    else if(isset($_POST['ASCe']))
   {
     $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH ASC LIMIT $start_from, $limit");
       
   }
+    else if(isset($_POST['ASCn']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY nomchambre ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCn']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY nomchambre ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCe']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH nbEtoil LIMIT $start_from, $limit");
+      
+  }
     else if(isset($_POST['DSCe']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH DESC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH nbEtoil LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['ASCc']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY typeC ASC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH nbChambre LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['DSCc']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY typeC DESC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH nbChambre LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['ASCp']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY prix ASC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH photo LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['DSCp']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY prix DESC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY photo ASC LIMIT $start_from, $limit");
       
   }
-   
+    else if(isset($_POST['ASCd']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY description ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCd']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY description ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCa']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY adresse ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCa']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY adresse ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCnote']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY note ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCnote']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY note ASC LIMIT $start_from, $limit");
+      
+  }
   
 }
 else
 {
-  $result=mysqli_query($conn,"SELECT * FROM chambre LIMIT $start_from, $limit");
+  $result=mysqli_query($conn,"SELECT * FROM chambre ORDER BY idH  LIMIT $start_from, $limit");
 }
 ?>
 
@@ -118,7 +147,7 @@ $listechambres=$chambre1C->afficherchambres();
                     </div>
                 </div>
             </div>
-             <table class="table table-bordered" id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+             class="table table-bordered" id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th>Id chambre
@@ -132,32 +161,32 @@ $listechambres=$chambre1C->afficherchambres();
                         <th>Nombre de lits
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCn" value="ASCn"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCn" value="DSCn"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCn" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCn"><img src="assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Id du Hotel
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCe" value="ASCe"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCe" value="DSCe"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASC" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSC"><img src="assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Type du chambre
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCc" value="ASCc"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCc" value="DSCc"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASC" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSC"><img src="assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>prix du chambre
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCp" value="ASCp"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCp" value="DSCp"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASC" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSC"><img src="assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
