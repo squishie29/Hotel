@@ -15,7 +15,7 @@ if (isset($_GET["page"])) {
 	$page=1;
 	};  
 $start_from = ($page-1) * $limit;  
-if(isset($_POST['ASC']) or isset($_POST['DSC']))
+if(isset($_POST['ASC']) or isset($_POST['DSC'])or isset($_POST['ASCn'])or isset($_POST['DSCn'])or isset($_POST['ASCe'])or isset($_POST['DSCe'])or isset($_POST['ASCc'])or isset($_POST['DSCc'])or isset($_POST['ASCp'])or isset($_POST['DSCp'])or isset($_POST['ASCd'])or isset($_POST['DSCd'])or isset($_POST['ASCa'])or isset($_POST['DSCa'])or isset($_POST['DSCnote'])or isset($_POST['DSCnote']))
 {
   if(isset($_POST['DSC']))
   {
@@ -33,37 +33,37 @@ if(isset($_POST['ASC']) or isset($_POST['DSC']))
   }
     else if(isset($_POST['DSCn']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nomHotel ASC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nomHotel DESC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['ASCe']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY idH nbEtoil LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nbEtoils ASC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['DSCe']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY idH nbEtoil LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nbEtoils DESC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['ASCc']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY idH nbChambre LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nbChambre ASC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['DSCc']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY idH nbChambre LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nbChambre DESC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['ASCp']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY idH photo LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY photo ASC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['DSCp']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY photo ASC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY photo DESC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['ASCd']))
@@ -73,7 +73,7 @@ if(isset($_POST['ASC']) or isset($_POST['DSC']))
   }
     else if(isset($_POST['DSCd']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY description ASC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY description DESC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['ASCa']))
@@ -83,7 +83,7 @@ if(isset($_POST['ASC']) or isset($_POST['DSC']))
   }
     else if(isset($_POST['DSCa']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY adresse ASC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY adresse DESC LIMIT $start_from, $limit");
       
   }
     else if(isset($_POST['ASCnote']))
@@ -93,14 +93,14 @@ if(isset($_POST['ASC']) or isset($_POST['DSC']))
   }
     else if(isset($_POST['ASCnote']))
   {
-    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY note ASC LIMIT $start_from, $limit");
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY note DESC LIMIT $start_from, $limit");
       
   }
   
 }
 else
 {
-  $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY idH  LIMIT $start_from, $limit");
+  $result=mysqli_query($conn,"SELECT * FROM hotel LIMIT $start_from, $limit");
 }
 ?>
 
@@ -163,8 +163,8 @@ $hotel1C=new hotelC();
                         <th>Nom du hotel
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCn" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCn"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCn" value="ASCn"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCn" value="DSCn"><img src="assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
