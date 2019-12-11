@@ -1,3 +1,24 @@
+<?php  
+$servername='localhost';
+$username='root';
+$password='';
+$dbname = "h_db";
+$conn=mysqli_connect($servername,$username,$password,"$dbname");
+if(!$conn){
+die('Could not Connect My Sql:' .mysql_error());
+}
+$limit = 2;  
+if (isset($_GET["page"])) {
+	$page  = $_GET["page"]; 
+	} 
+	else{ 
+	$page=1;
+	};  
+$start_from = ($page-1) * $limit;  
+$result = mysqli_query($conn,"SELECT * FROM chambre ORDER BY idCh ASC LIMIT $start_from, $limit");
+?>
+
+
 <?PHP
 include "../core/chambreC.php";
 $chambre1C=new chambreC();
@@ -51,7 +72,10 @@ $listechambres=$chambre1C->afficherchambres();
                     </tr>
                 </thead>
                 <tbody>
-                    <?PHP foreach($listechambres as $row){?>
+                    
+                    <?php  
+while ($row = mysqli_fetch_array($result)) {  
+?>
                     <tr>
                         <td><?PHP echo $row['idCh']; ?></td>
                         <td><?PHP echo $row['nbBed']; ?></td>
@@ -72,6 +96,19 @@ $listechambres=$chambre1C->afficherchambres();
                     </tr>     
                 </tbody>
             </table>
+            <?php  
+
+$result_db = mysqli_query($conn,"SELECT COUNT(idCh) FROM chambre"); 
+$row_db = mysqli_fetch_row($result_db);  
+$total_records = $row_db[0];  
+$total_pages = ceil($total_records / $limit); 
+/* echo  $total_pages; */
+$pagLink = "<ul class='pagination'>";  
+for ($i=1; $i<=$total_pages; $i++) {
+              $pagLink .= "<li class='page-item'><a class='page-link' href='Bchambres.php?page=".$i."'>".$i."</a></li>";	
+}
+echo $pagLink . "</ul>";  
+?>
         </div>
     </div>     
 </body>
