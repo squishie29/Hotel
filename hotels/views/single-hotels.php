@@ -376,7 +376,8 @@ include "../core/promotionC2.php";
                                             <span><?PHP echo $row['adresse']; ?></span>
                                         </li>
                                         <li>
-                                        <div id="map"></div> 
+                                            
+                                        <div id="map"></div>
                                         </li>
 
                                     </ul>
@@ -523,8 +524,7 @@ echo $string;*/
         <!-- Start Form Gallery Section -->
         <section class="form-gallery-section">
             <div class="container">
-                <?php include "reserver.php" ?>
-                
+                <div style="height:400px;"> <form action="reserver.php" method="post"><input style="margin-left:500px;" type="submit" value="reserver" name="reserver"> </form></div>
             </div>
         </section>
         <!-- End Form Gallery Section -->
