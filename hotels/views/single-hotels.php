@@ -389,9 +389,14 @@ include "../core/promotionC2.php";
                                     <h2><?PHP echo $nomHotel ?><span>/(per person)</span></h2>
                                     <ul class="details-list">
                                         <li><h3>Description du hotel:</h3></li>
-                                    </ul>
+                                    
                                     <p style="word-wrap: break-word;"><?PHP echo $description; ?></p>
-                                    <h3>Prix du chambre:</h3>
+                                        
+                                   <ul class="details-list"> 
+                                       
+                                       <li><h2>Prix du chambre:</h2></li>
+                                           
+                                    </ul>
 <table class="tabprix">
 <thead>
 <tr>
@@ -426,7 +431,7 @@ die('Could not Connect My Sql:' .mysql_error());
     {
             foreach($result3 as $row2)
             {?>
-<tr>
+<tr class="details-list">
 <td class="text-left"><?PHP echo $row2['typeC'];?></td>
 <td class="text-left"><?PHP echo $row2['prix'];?> TND</td>
 </tr>
@@ -434,8 +439,8 @@ die('Could not Connect My Sql:' .mysql_error());
     <?PHP }}
     else 
     {?>
-    <h4 style="color:red;"><b><?PHP echo $row99[3]; ?> SUR CE HOTEL DE <?php echo $row99[5]; ?>%:</b><br></h4>
-    <h4><?php echo $row99[1]; ?> <span>jusqu'a</span> <?php echo $row99[2]; ?></h4>
+    <h5  style="color:#f45a43;"><?PHP echo $row99[3]; ?> sur ce hotel de  <?php echo $row99[5]; ?>%:<br></h5>
+    <h5  class="single-tours-item"><?php echo $row99[1]; ?> <span>jusqu'a</span> <?php echo $row99[2]; ?></h5>
     <?PHP
         foreach($result3 as $row66)
             {?>
@@ -524,7 +529,9 @@ echo $string;*/
         <!-- Start Form Gallery Section -->
         <section class="form-gallery-section">
             <div class="container">
-                <div style="height:400px;"> <form action="reserver.php" method="post"><input style="margin-left:500px;" type="submit" value="reserver" name="reserver"> </form></div>
+                <div class="tours-btn">
+                                <a href="reserver.php" class="tours-btn-one" style="width:50%;">Reserver maintenant</a>
+                            </div>
             </div>
         </section>
         <!-- End Form Gallery Section -->
