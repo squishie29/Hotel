@@ -419,7 +419,7 @@ die('Could not Connect My Sql:' .mysql_error());
     $result5=mysqli_query($conn,"SELECT * from promotion where idH=$idH");
     $row99 = mysqli_fetch_row($result5);
     //$rows5 = mysqli_num_rows($row99);
-    var_dump($row99);
+    //var_dump($row99);
     
     if (empty($row99))
     {
