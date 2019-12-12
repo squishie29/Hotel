@@ -528,9 +528,9 @@ echo $string;*/
 
         <!-- Start Form Gallery Section -->
         <section class="form-gallery-section">
-            <div class="container">
+                        <div class="container">
                 <div class="tours-btn">
-                                <a href="reserver.php" class="tours-btn-one" style="width:50%;">Reserver maintenant</a>
+                                <a href="reserver.php" class="tours-btn-one" style="width:150px;">Reserver maintenant</a>
                             </div>
             </div>
         </section>
