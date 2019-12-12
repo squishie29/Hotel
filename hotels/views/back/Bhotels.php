@@ -24,7 +24,9 @@ include "header.php";
 }
 
 else { 
+    echo '<img src="../assets/img/arnold5.png"><br>';
       echo 'Veuillez vous connecter </br>';  
+    
 	  echo '<a href="auth.html">Cliquer pour se connecter</a>';
 
 }  ?>
