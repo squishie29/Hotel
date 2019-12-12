@@ -104,6 +104,9 @@
             <li>
               <a href="Bchambres.php">Chambres</a>
             </li>
+              <li>
+              <a href="Bpromotions.php">Promotions</a>
+            </li>
           </ul>
         </li>
     

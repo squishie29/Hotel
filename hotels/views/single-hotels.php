@@ -47,9 +47,12 @@ include "../entities/hotel.php";
 include "../core/hotelC.php";
 include "../entities/chambre.php";
 include "../core/chambreC.php";
+include "../entities/promotion.php";
+include "../core/promotionC2.php";
 	$hotel1C=new hotelC();
     $hotel2C=new hotelC();  
     $chambre1C=new chambreC();
+    $promotion1C=new promotionC();
     $result3=$chambre1C->recupererchambre($_POST['idH']); 
         
     $result2=$hotel1C->afficherhotels();
@@ -64,7 +67,19 @@ include "../core/chambreC.php";
 		$description=$row['description'];
 		$adresse=$row['adresse'];
 		$note=$row['note'];
-    }   
+    }  
+        
+    $result4=$promotion1C->recupererpromotion($_POST['idH']);
+	/*foreach($result4 as $row4)
+    {
+		$id=$row4['id'];
+		$date_d=$row4['date_d'];
+		$date_f=$row4['date_f'];
+        $titre=$row4['titre'];
+		$description=$row4['description'];
+		$pourcentage=$row4['pourcentage'];
+		$idH2=$row4['idH'];
+    }*/
         
    
 ?>
@@ -338,7 +353,7 @@ include "../core/chambreC.php";
                             <div class="col-lg-6">
                                 <div class="single-tours-item">
                                     <div class="single-tours-image">
-                                        <img src="../entities/img/<?PHP echo $row['photo']; ?>">
+                                        <img src="assets/img/<?PHP echo $row['photo']; ?>">
                                     </div>
 
                                     <div class="single-tours">
@@ -371,7 +386,7 @@ include "../core/chambreC.php";
                                     <ul class="details-list">
                                         <li><h3>Description du hotel:</h3></li>
                                     </ul>
-                                    <p style="word-wrap: break-word;"><?PHP echo $description ?></p>
+                                    <p style="word-wrap: break-word;"><?PHP echo $description; ?></p>
                                     <h3>Prix du chambre:</h3>
 <table class="tabprix">
 <thead>
@@ -383,6 +398,15 @@ include "../core/chambreC.php";
 </thead>
 <tbody class="">
  <?PHP
+    $test=$result4;
+var_dump(count($test->fetchAll()));
+    
+    
+
+    foreach($result4 as $row4)
+    {
+	 echo	$row4['pourcentage'];
+    }
                                         foreach($result3 as $row2)
                                             {?>
 <tr>

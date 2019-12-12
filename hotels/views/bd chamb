@@ -1,14 +1,18 @@
-		hotel->chambre
+		hotel->promotion
         
         
-        idH->idCH
-        
-        
-       nomchambre->nbBed
-       
-       
-       nbetoils->typeC
-       
-        
-        
-        description->prix
+  $idH -> id
+  
+	 $nompromotion  -> date_d
+     
+ $nbEtoils -> date_f
+ 
+	 $nbChambre -> titre
+     
+	 $photo -> fasa5ha
+     
+  $description -> jawha behi
+  
+ $adresse -> pourcentage
+ 
+ $note  -> idH
