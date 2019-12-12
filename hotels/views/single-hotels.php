@@ -35,7 +35,7 @@
     <style>
       #map {
           margin-top: 20px;
-        height: 400px;;
+        height: 300px;
           width: 100%;
       }
     </style>
@@ -375,6 +375,9 @@ include "../core/promotionC2.php";
                                             ADDRESS
                                             <span><?PHP echo $row['adresse']; ?></span>
                                         </li>
+                                        <li>
+                                        <div id="map"></div> 
+                                        </li>
 
                                     </ul>
                                 </div>
@@ -430,7 +433,7 @@ die('Could not Connect My Sql:' .mysql_error());
     <?PHP }}
     else 
     {?>
-    <h4 style="color:red;"><b>PROMOTION SUR CE HOTEL DE <?php echo $row99[5]; ?>%:</b><br></h4>
+    <h4 style="color:red;"><b><?PHP echo $row99[3]; ?> SUR CE HOTEL DE <?php echo $row99[5]; ?>%:</b><br></h4>
     <h4><?php echo $row99[1]; ?> <span>jusqu'a</span> <?php echo $row99[2]; ?></h4>
     <?PHP
         foreach($result3 as $row66)
@@ -440,7 +443,26 @@ die('Could not Connect My Sql:' .mysql_error());
     <td class="text-left"><strike><?PHP echo $row66['prix'];?>TND  </strike><?PHP echo $row66['prix']-$row66['prix']*$row99[5]/100;?> TND</td>
 </tr>
     
-    <?PHP }} ?>
+    <?PHP }} 
+    
+    /*$string=$row99[4]; $string = strip_tags($string);
+if (strlen($string) > 30) {
+
+    // truncate strin
+    $stringCut = substr($string, 0, 30);
+    $stringCut2 = substr($string, 30, strlen($string));
+    $endPoint = strrpos($stringCut, ' ');
+
+    //if the string doesn't contain any space then it will cut without word basis.
+    $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+    $string .= '<form><button type="submit" name="test22" value="test22" ">Read More</button></form>';
+}
+echo $string;*/
+    
+    
+    ?>
+
+    
         
     
 
@@ -462,7 +484,7 @@ die('Could not Connect My Sql:' .mysql_error());
     async defer></script>
 
                                 </div>
-                                 <div id="map"></div> 
+                                 
                             </div>
                             
                         </div>
