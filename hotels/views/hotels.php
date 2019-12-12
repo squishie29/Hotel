@@ -1,3 +1,108 @@
+<?php  
+$servername='localhost';
+$username='root';
+$password='';
+$dbname = "h_db";
+$conn=mysqli_connect($servername,$username,$password,"$dbname");
+if(!$conn){
+die('Could not Connect My Sql:' .mysql_error());
+}
+$limit = 4;  
+if (isset($_GET["page"])) {
+	$page  = $_GET["page"]; 
+	} 
+	else{ 
+	$page=1;
+	};  
+$start_from = ($page-1) * $limit;  
+if(isset($_POST['ASC']) or isset($_POST['DSC'])or isset($_POST['ASCn'])or isset($_POST['DSCn'])or isset($_POST['ASCe'])or isset($_POST['DSCe'])or isset($_POST['ASCc'])or isset($_POST['DSCc'])or isset($_POST['ASCp'])or isset($_POST['DSCp'])or isset($_POST['ASCd'])or isset($_POST['DSCd'])or isset($_POST['ASCa'])or isset($_POST['DSCa'])or isset($_POST['DSCnote'])or isset($_POST['DSCnote']))
+{
+  if(isset($_POST['DSC']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY idH DESC LIMIT $start_from, $limit");
+  }
+  else if(isset($_POST['ASC']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY idH ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCn']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nomHotel ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCn']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nomHotel DESC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCe']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nbEtoils ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCe']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nbEtoils DESC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCc']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nbChambre ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCc']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY nbChambre DESC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCp']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY photo ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCp']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY photo DESC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCd']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY description ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCd']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY description DESC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCa']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY adresse ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['DSCa']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY adresse DESC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCnote']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY note ASC LIMIT $start_from, $limit");
+      
+  }
+    else if(isset($_POST['ASCnote']))
+  {
+    $result=mysqli_query($conn,"SELECT * FROM hotel ORDER BY note DESC LIMIT $start_from, $limit");
+      
+  }
+  
+}
+else
+{
+  $result=mysqli_query($conn,"SELECT * FROM hotel LIMIT $start_from, $limit");
+}
+?>
 <?PHP
 include "../core/hotelC.php";
 $hotel1C=new hotelC();
@@ -315,27 +420,33 @@ else
     <!-- End Page banner -->
 
     <!-- Start Tours Section -->
-    <form action="single-hotels.php" id="f22">
+    
     <section class="tours-section">
+        
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row">
-                        <?PHP foreach($listehotels as $row){?>
+                                            <?php  
+while ($row = mysqli_fetch_array($result)) {  
+?>
                         <div class="col-lg-6 col-md-6 col-sm-6">
+                            <form action="single-hotels.php" method="post">
+                                <button style="background-color:transparent;border:none;width:100%;" type="submit" value="envoyer">
                             <div class="tours-item">
+                                
                                 <div class="tours-image">
-<<<<<<< Updated upstream
-                                    <a href="javascript:{}" onclick="document.getElementById('f22').submit(); return false;" value="<?PHP echo $row['idH']; ?> ">
-=======
-                                    <button style="background-color:transparent;border:none; " type="submit" value="envoyer">
+                                    
                                         <a name="aa" value="<?PHP echo $row['idH']; ?>">
->>>>>>> Stashed changes
                                         <img class="imghotel" src="../entities/img/<?PHP echo $row['photo']; ?>">
-                                    </a>
+                                        </a>
+                                        
+                                    
+                                    <input type="text" name="idH" value="<?PHP echo $row['idH']; ?>" hidden>
                                 </div>
+                                
 
-                                <div class="tours-content">
+                                <div class="tours-content" style="word-wrap: break-word;">
                                     <ul class="tours-list">
                                         <li>
                                             <i class="fas fa-star"></i>
@@ -346,27 +457,21 @@ else
                                                 <?PHP echo $row['note']; ?>/10
                                             </i>
                                         </li>
-                                        <li>
-                                            <a href="reserver.php"><input type="button" value="reserver" class ="form-control"></a>
-                                        </li>
                                     </ul>
 
                                     <h3>
-                                        <a href="javascript:{}" onclick="document.getElementById('f22').submit(); return false;" value="<?PHP echo $row['idH']; ?> ">
+                                        <a value="<?PHP echo $row['idH']; ?> ">
                                             <?PHP echo $row['nomHotel']; ?></a>
                                     </h3>
-                                    <p>
-                                        <?PHP echo $row['description']; ?>
-                                    </p>
-
 
                                 </div>
                             </div>
+                                    </button>
+                                </form>
                         </div>
                         <?php
                             }
                         ?>
-                        </form>
                     </div>
 
                 </div>
@@ -388,9 +493,92 @@ else
                         </div>
 
                     </div>
+                    <h5 style="margin-bottom: 30px;margin-top: 10px; ">Trier par:</h5>
+                    <div class="container" >
+                        <div style="display:flex; justify-content:space-between;">
+                            <p style="margin-top: 10px;">Nom du hotel</p>
+                        <form method="POST" style=" width: 52px;">
+                                <p>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;"   type="submit" name="ASCn" value="ASCn"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCn" value="DSCn"><img src="assets/images/sort_desc.png"></button>
+                                    </a>
+                                </p>
+                            </form>
+                            </div>
+                            <div style="display:flex; justify-content:space-between;">
+                            <p style="margin-top: 10px;">Nombre d'etoils</p>
+                        <form method="POST" style=" width: 52px;">
+                                <p>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;"   type="submit" name="ASCe" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCe"><img src="assets/images/sort_desc.png"></button>
+                                    </a>
+                                </p>
+                            </form></div>
+                                <div style="display:flex; justify-content:space-between;">
+                           <p>Nombre des chambres</p> 
+                        <form method="POST" style=" width: 52px;">
+                                <p style="margin-top: 10px;">
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;"   type="submit" name="ASCc" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCc"><img src="assets/images/sort_desc.png"></button>
+                                    </a>
+                                </p>
+                            </form></div>
+                                    <div style="display:flex; justify-content:space-between;">
+                           <p>Photo du hotel</p> 
+                        <form method="POST" style=" width: 52px;">
+                                <p style="margin-top: 10px;">
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;"   type="submit" name="ASCp" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCp"><img src="assets/images/sort_desc.png"></button>
+                                    </a>
+                                </p>
+                            </form></div>
+                                        <div style="display:flex; justify-content:space-between;">
+                           <p>Description du hotel</p> 
+                        <form method="POST" style=" width: 52px;">
+                                <p style="margin-top: 10px;">
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;"   type="submit" name="ASCd" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCd"><img src="assets/images/sort_desc.png"></button>
+                                    </a>
+                                </p>
+                            </form></div>
+                            <div style="display:flex; justify-content:space-between;">
+                            <p>Adresse du hotel</p>
+                        <form method="POST" style=" width: 52px;">
+                                <p>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;"  type="submit" name="ASCa" value="ASC"><img  src="assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCa"><img src="assets/images/sort_desc.png"></button>
+                                    </a>
+                                </p>
+                            </form></div>
+                            <div style="display:flex; justify-content:space-between;">
+                            <p>Note du hotel</p>
+                        <form method="POST" style=" width: 52px;">
+                                <p>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;"   type="submit" name="ASCnote" value="ASC"><img  src="assets/images/sort_asc.png" alt="aaa"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCnote"><img src="assets/images/sort_desc.png"></button>
+                                    </a>
+                                </p>
+                            </form></div>
+                        
+            
+    </div>
                 </div>
             </div>
+            <?php  
+
+$result_db = mysqli_query($conn,"SELECT COUNT(idH) FROM hotel"); 
+$row_db = mysqli_fetch_row($result_db);  
+$total_records = $row_db[0];  
+$total_pages = ceil($total_records / $limit); 
+/* echo  $total_pages; */
+$pagLink = "<ul class='pagination' style='margin:auto; width:50px;  > ";  
+for ($i=1; $i<=$total_pages; $i++) {
+              $pagLink .= "<li  class='page-item'><a class='page-link' href='hotels.php?page=".$i."'>".$i."</a></li>";	
+}
+echo $pagLink . "</ul>";  
+?>
         </div>
+        
     </section>
     <!-- End Tours Section -->
 

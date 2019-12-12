@@ -10,7 +10,7 @@ if (isset($_POST['idH']) ){
 $hotelX=new hotel((int)$_POST['idH'],$_POST['nomHotel'],(int)$_POST['nbEtoils'],$_POST['nbChambre'],$_POST['photo'],$_POST['description'],$_POST['adresse'],$_POST['note']);
 
 $hotel1->ajouterhotel($hotelX);
-header('Location: manage.php');
+header('Location: Bhotels.php');
 
 }
 else{
