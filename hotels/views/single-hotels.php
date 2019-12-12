@@ -69,7 +69,7 @@ include "../core/promotionC2.php";
 		$note=$row['note'];
     }  
         
-    $result4=$promotion1C->recupererpromotion($_POST['idH']);
+    //$result4=$promotion1C->recupererpromotion($_POST['idH']);
 	/*foreach($result4 as $row4)
     {
 		$id=$row4['id'];
@@ -398,23 +398,52 @@ include "../core/promotionC2.php";
 </thead>
 <tbody class="">
  <?PHP
-    $test=$result4;
-var_dump(count($test->fetchAll()));
-    
-    
-
-    foreach($result4 as $row4)
+    /*$test=$result4;
+var_dump(count($test->fetchAll()));*/
+    /*foreach($result4 as $row4)
     {
 	 echo	$row4['pourcentage'];
-    }
-                                        foreach($result3 as $row2)
-                                            {?>
+    }*/
+         
+$servername='localhost';
+$username='root';
+$password='';
+$dbname = "h_db";
+$conn=mysqli_connect($servername,$username,$password,"$dbname");
+if(!$conn){
+die('Could not Connect My Sql:' .mysql_error());
+}
+    $result5=mysqli_query($conn,"SELECT * from promotion where idH=$idH");
+    $row99 = mysqli_fetch_row($result5);
+    //$rows5 = mysqli_num_rows($row99);
+    var_dump($row99);
+    
+    if (empty($row99))
+    {
+            foreach($result3 as $row2)
+            {?>
 <tr>
 <td class="text-left"><?PHP echo $row2['typeC'];?></td>
 <td class="text-left"><?PHP echo $row2['prix'];?> TND</td>
 </tr>
     
-    <?PHP }?>
+    <?PHP }}
+    else 
+    {?>
+    <h4 style="color:red;"><b>PROMOTION SUR CE HOTEL DE <?php echo $row99[5]; ?>%:</b><br></h4>
+    <h4><?php echo $row99[1]; ?> <span>jusqu'a</span> <?php echo $row99[2]; ?></h4>
+    <?PHP
+        foreach($result3 as $row66)
+            {?>
+<tr>
+    <td class="text-left"><?PHP echo $row66['typeC'];?></td>
+    <td class="text-left"><strike><?PHP echo $row66['prix'];?>TND  </strike><?PHP echo $row66['prix']-$row66['prix']*$row99[5]/100;?> TND</td>
+</tr>
+    
+    <?PHP }} ?>
+        
+    
+
 </tbody>
 </table>
                               
