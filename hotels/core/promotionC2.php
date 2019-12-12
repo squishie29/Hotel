@@ -1,5 +1,5 @@
 <?PHP
-require_once("../entities/promotion.php");
+require_once("../../entities/promotion.php");
 class promotionC {
     
 function afficherpromotion ($promotion){

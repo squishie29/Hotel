@@ -1,11 +1,11 @@
 <HTML>
 <head>
-    <script src="assets/js/valid.js"></script>
+    <script src="../assets/js/valid.js"></script>
 </head>
 <body>
     <?PHP
-include "../entities/hotel.php";
-include "../core/hotelC.php";
+include "../../entities/hotel.php";
+include "../../core/hotelC.php";
 
 	$hotel1C=new hotelC();
     $result=$hotel1C->recupererhotel($_POST['idH']);
@@ -20,7 +20,7 @@ include "../core/hotelC.php";
 		$note=$row['note'];}
    
 ?>
-<link rel="stylesheet" href="assets/css/ajouter.css">
+<link rel="stylesheet" href="../assets/css/ajouter.css">
 <div class="container">  
   <form method="post" action="Cmodifier.php" id="contact" onsubmit="return formValidation();" name='registration'>
     <h3>Modifier un Hotel</h3>

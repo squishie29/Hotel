@@ -1,5 +1,7 @@
 <HTML>
 <head>
+        <script src="../assets/js/validp.js"></script>
+
 </head>
 <body>
  <?PHP

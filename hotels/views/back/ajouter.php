@@ -1,6 +1,6 @@
 <?PHP
-include "../entities/hotel.php";
-include "../core/hotelC.php";
+include "../../entities/hotel.php";
+include "../../core/hotelC.php";
 /*foreach($_POST as $key=>$value)
 {
     echo $key." : ".$value."<br>";

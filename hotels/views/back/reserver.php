@@ -13,10 +13,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
 
 	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="assets/back/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="../assets/back/css/bootstrap.min.css" />
 
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="assets/back/css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../assets/back/css/style.css" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

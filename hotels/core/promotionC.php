@@ -1,6 +1,6 @@
 <?PHP
-include "../config.php";
-require_once("../entities/promotion.php");
+include "../../config.php";
+require_once("../../entities/promotion.php");
 class promotionC {
     
 function afficherpromotion ($promotion){

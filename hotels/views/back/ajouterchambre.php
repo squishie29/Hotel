@@ -1,6 +1,6 @@
 <?PHP
-include "../entities/chambre.php";
-include "../core/chambreC.php";
+include "../../entities/chambre.php";
+include "../../core/chambreC.php";
 
 foreach($_POST as $key=>$value)
 {

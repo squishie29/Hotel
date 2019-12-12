@@ -1,13 +1,13 @@
 <html>
 <head>
-    <script src="assets/js/validc.js"></script>
+    <script src="../assets/js/validp.js"></script>
 </head>
 <body>
     <?PHP
-include "../entities/chambre.php";
-include "../core/chambreC2.php";
-include("../entities/hotel.php");
-include "../core/hotelC.php";
+include "../../entities/chambre.php";
+include "../../core/chambreC2.php";
+include("../../entities/hotel.php");
+include "../../core/hotelC.php";
     
     $hotel1C=new hotelC();
     $listehotels=$hotel1C->afficherhotels();
@@ -23,7 +23,7 @@ include "../core/hotelC.php";
     }
    
 ?>
-<link rel="stylesheet" href="assets/css/ajouter.css">
+<link rel="stylesheet" href="../assets/css/ajouter.css">
 <div class="container">  
   <form method="post" action="cmodifierchambre.php" id="contact" onSubmit="return formValidation();" name='registration'>
     <h3>Modifier un chambre</h3>

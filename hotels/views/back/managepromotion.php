@@ -95,7 +95,7 @@ else
 ?>
 
 <?PHP
-include "../core/promotionC.php";
+include "../../core/promotionC.php";
 $promotion1C=new promotionC();
 
 
@@ -119,7 +119,7 @@ $promotion1C=new promotionC();
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/manage.css">
-    <script src="assets/js/manage.js"></script>
+    <script src="../assets/js/manage.js"></script>
 
 </head>
 
@@ -144,8 +144,8 @@ $promotion1C=new promotionC();
                         <th>Id promotion
                             <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASC" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSC"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASC" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSC"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form>
@@ -153,48 +153,48 @@ $promotion1C=new promotionC();
                         <th>Nom du promotion
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCn" value="ASCn"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCn" value="DSCn"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCn" value="ASCn"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCn" value="DSCn"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Nombre d'etoils
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCe" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCe"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCe" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCe"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Nombre des chambres
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCc" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCc"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCc" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCc"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Description du promotion
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCd" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCd"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCd" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCd"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>pourcentage du promotion
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCa" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCa"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCa" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCa"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>idH du promotion
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCidH" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCidH"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCidH" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCidH"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>

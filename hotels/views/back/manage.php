@@ -105,7 +105,7 @@ else
 ?>
 
 <?PHP
-include "../core/hotelC.php";
+include "../../core/hotelC.php";
 $hotel1C=new hotelC();
 
 
@@ -129,7 +129,7 @@ $hotel1C=new hotelC();
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/manage.css">
-    <script src="assets/js/manage.js"></script>
+    <script src="../assets/js/manage.js"></script>
 
 </head>
 
@@ -154,8 +154,8 @@ $hotel1C=new hotelC();
                         <th>Id Hotel
                             <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASC" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSC"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASC" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSC"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form>
@@ -163,56 +163,56 @@ $hotel1C=new hotelC();
                         <th>Nom du hotel
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCn" value="ASCn"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCn" value="DSCn"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCn" value="ASCn"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSCn" value="DSCn"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Nombre d'etoils
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCe" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCe"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCe" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCe"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Nombre des chambres
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCc" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCc"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCc" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCc"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Photo du hotel
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCp" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCp"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCp" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCp"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Description du hotel
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCd" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCd"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCd" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCd"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Adresse du hotel
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCa" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCa"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCa" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCa"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>
                         <th>Note du hotel
                         <form method="POST">
                                 <p>
-                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCnote" value="ASC"><img  src="assets/images/sort_asc.png"></button>
-                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCnote"><img src="assets/images/sort_desc.png"></button>
+                                    <a><button style="width:25px; height:25px; background-color:transparent;border: none;" class="btn btn-primary btn-xs" type="submit" name="ASCnote" value="ASC"><img  src="../assets/images/sort_asc.png"></button>
+                                        <button style="width:25px; height:25px; background-color:transparent;border: none;" type="submit" name="DSC" value="DSCnote"><img src="../assets/images/sort_desc.png"></button>
                                     </a>
                                 </p>
                             </form></th>

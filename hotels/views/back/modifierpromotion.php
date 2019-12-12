@@ -1,11 +1,11 @@
 <HTML>
 <head>
-    <script src="assets/js/valid.js"></script>
+    <script src="../assets/js/validp.js"></script>
 </head>
 <body>
     <?PHP
-include "../entities/promotion.php";
-include "../core/promotionC.php";
+include "../../entities/promotion.php";
+include "../../core/promotionC.php";
 
 	$promotion1C=new promotionC();
     $result=$promotion1C->recupererpromotion($_POST['id']);
@@ -19,7 +19,7 @@ include "../core/promotionC.php";
 		$idH=$row['idH'];}
    
 ?>
-<link rel="stylesheet" href="assets/css/ajouter.css">
+<link rel="stylesheet" href="../assets/css/ajouter.css">
 <div class="container">  
   <form method="post" action="cmodifierpromotion.php" id="contact" onsubmit="return formValidation();" name='registration'>
     <h3>Modifier un promotion</h3>

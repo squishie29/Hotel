@@ -1,5 +1,5 @@
 <?PHP
-include "../core/hotelC.php";
+include "../../core/hotelC.php";
 $hotel1C=new hotelC();
 if (isset($_POST['search2'])) 
 {
@@ -25,27 +25,27 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap Min CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <!-- Owl Carousel Min CSS -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
     <!-- Owl Theme Default Min CSS -->
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
     <!-- Magnific CSS -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
     <!-- Animate Min CSS -->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
     <!-- Animate Min CSS -->
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="../assets/css/meanmenu.css">
     <!-- Nice Select Min CSS -->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
     <!-- Meanmenu Min CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
     <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="../assets/css/flaticon.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
     <!-- TITLE -->
     <title>Povo - Travel Agency & Tourism HTML Template</title>
@@ -64,7 +64,7 @@ else
         <div class="povo-mobile-nav">
             <div class="logo">
                 <a href="hotels.php">
-                    <img src="assets/img/logo.png" alt="logo">
+                    <img src="../assets/img/logo.png" alt="logo">
                 </a>
             </div>
         </div>
@@ -72,7 +72,7 @@ else
         <div class="povo-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="hotels.php"><img src="assets/img/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="hotels.php"><img src="../assets/img/logo.png" alt="logo"></a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
@@ -227,7 +227,7 @@ else
                 <div class="modal-body">
                     <div class="logo">
                         <a href="hotels.php">
-                            <img src="assets/img/logo.png" alt="logo">
+                            <img src="../assets/img/logo.png" alt="logo">
                         </a>
                     </div>
 
@@ -330,7 +330,7 @@ else
                                 <div class="tours-image">
                                     
                                         <a name="aa" value="<?PHP echo $row['idH']; ?>">
-                                        <img class="imghotel" src="assets/img/<?PHP echo $row['photo']; ?>">
+                                        <img class="imghotel" src="../assets/img/<?PHP echo $row['photo']; ?>">
                                         </a>
                                         
                                     
@@ -503,32 +503,32 @@ else
                     <ul class="instagram-feed">
                         <li>
                             <a href="#">
-                                <img src="assets/img/instagram/1.png" alt="image">
+                                <img src="../../assets/img/instagram/1.png" alt="image">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/img/instagram/2.png" alt="image">
+                                <img src="../../assets/img/instagram/2.png" alt="image">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/img/instagram/3.png" alt="image">
+                                <img src="../../assets/img/instagram/3.png" alt="image">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/img/instagram/4.png" alt="image">
+                                <img src="../../assets/img/instagram/4.png" alt="image">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/img/instagram/5.png" alt="image">
+                                <img src="../../assets/img/instagram/5.png" alt="image">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="assets/img/instagram/6.png" alt="image">
+                                <img src="../../assets/img/instagram/6.png" alt="image">
                             </a>
                         </li>
                     </ul>
@@ -556,25 +556,25 @@ else
 
 
     <!-- jQuery Min JS -->
-    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../assets/js/jquery-3.2.1.slim.min.js"></script>
     <!-- Popper Min JS -->
-    <script src="assets/js/popper.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
     <!-- Bootstrap Min JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
     <!-- Magnific Min JS -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
     <!-- Mean Menu Min JS -->
-    <script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="../assets/js/jquery.meanmenu.js"></script>
     <!-- Nice Select Min JS -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
     <!-- Owl Carousel Min JS -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
     <!-- Mixitup Min JS -->
-    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="../assets/js/jquery.mixitup.min.js"></script>
     <!-- Upstart Map JS -->
-    <script src="assets/js/upstart-map.js"></script>
+    <script src="../assets/js/upstart-map.js"></script>
     <!-- Active JS -->
-    <script src="assets/js/active.js"></script>
+    <script src="../assets/js/active.js"></script>
 </body>
 
 <!-- Mirrored from templates.envytheme.com/povo/tours.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Nov 2019 22:16:06 GMT -->

@@ -1,6 +1,6 @@
 <?PHP
-include "../config.php";
-require_once("../entities/hotel.php");
+include "../../config.php";
+require_once("../../entities/hotel.php");
 class hotelC {
     
 function afficherhotel ($hotel){

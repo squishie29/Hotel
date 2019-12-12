@@ -13,7 +13,7 @@ if (isset($_SESSION['l']) && isset($_SESSION['p']))
 
 else { 
       echo 'Veuillez vous connecter </br>';  
-	  echo '<a href="auth.html">Cliquer pour se connecter</a>';
+	  echo '<a href="auth.html">Cliquer pour se connecter0</a>';
 
 }  
 //définir la session une session est un tableau temporaire 
