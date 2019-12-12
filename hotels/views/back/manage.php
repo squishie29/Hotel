@@ -129,7 +129,7 @@ $hotel1C=new hotelC();
 
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/css/manage.css">
+    <link rel="stylesheet" href="../assets/css/manage.css">
     <script src="../assets/js/manage.js"></script>
 
 </head>
