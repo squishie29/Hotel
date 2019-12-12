@@ -52,7 +52,6 @@ This files table contents are outlined below>>>>>
 ** - Login In Style CSS
 ** - Footer Style CSS
 
-
 */
 /*================================================
 Default Area CSS
@@ -115,11 +114,6 @@ img {
   font-size: 48px;
   margin: -10px 0 20px 0;
   text-transform: capitalize;
-}
-.para1{
-    width: 5px;
-    border: red solid 1px;
-    text-overflow:ellipsis;
 }
 
 .section-title p {
@@ -3846,8 +3840,6 @@ Single Tours Style CSS
   font-size: 14px;
   line-height: 30px;
   margin: 0;
-  word-wrap: break-word;
-    
 }
 
 .single-details .details-list {
@@ -4245,8 +4237,8 @@ Login In Style CSS
 .login-form form .form-control {
   height: 50px;
   border: 1px solid #eeeeee;
+color: black;
   border-radius: 3px;
-  color: black;
   padding-left: 20px;
   background: transparent;
 }
