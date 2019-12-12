@@ -63,7 +63,7 @@ else
     <div class="navbar-area  header-sticky">
         <div class="povo-mobile-nav">
             <div class="logo">
-                <a href="index-2.html">
+                <a href="hotels.php">
                     <img src="assets/img/logo.png" alt="logo">
                 </a>
             </div>
@@ -72,14 +72,14 @@ else
         <div class="povo-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="index-2.html"><img src="assets/img/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="hotels.php"><img src="assets/img/logo.png" alt="logo"></a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item"><a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="index-2.html" class="nav-link">Home One</a>
+                                        <a href="hotels.php" class="nav-link">Home One</a>
                                     </li>
 
                                     <li class="nav-item">
@@ -226,7 +226,7 @@ else
                 </div>
                 <div class="modal-body">
                     <div class="logo">
-                        <a href="index-2.html">
+                        <a href="hotels.php">
                             <img src="assets/img/logo.png" alt="logo">
                         </a>
                     </div>
@@ -308,7 +308,7 @@ else
         <div class="container">
             <div class="page-banner-content">
                 <h2>Hotels</h2>
-                <p><a href="index-2.html">Home</a> / Hotels</p>
+                <p><a href="hotels.php">Home</a> / Hotels</p>
             </div>
         </div>
     </section>
@@ -330,7 +330,7 @@ else
                                 <div class="tours-image">
                                     
                                         <a name="aa" value="<?PHP echo $row['idH']; ?>">
-                                        <img class="imghotel" src="../entities/img/<?PHP echo $row['photo']; ?>">
+                                        <img class="imghotel" src="assets/img/<?PHP echo $row['photo']; ?>">
                                         </a>
                                         
                                     

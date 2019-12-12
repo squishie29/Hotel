@@ -35,8 +35,7 @@
     <style>
       #map {
           margin-top: 20px;
-          margin-bottom: 20px;
-        height: 60vh;
+        height: 400px;;
           width: 100%;
       }
     </style>
@@ -79,7 +78,7 @@ include "../core/chambreC.php";
         <div class="navbar-area  header-sticky">
             <div class="povo-mobile-nav">
                 <div class="logo">
-                    <a href="index-2.html">
+                    <a href="hotels.php">
                         <img src="assets/img/logo.png" alt="logo">
                     </a>
                 </div>
@@ -88,14 +87,14 @@ include "../core/chambreC.php";
             <div class="povo-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index-2.html"><img src="assets/img/logo.png" alt="logo"></a>
+                        <a class="navbar-brand" href="hotels.php"><img src="assets/img/logo.png" alt="logo"></a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item"><a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="index-2.html" class="nav-link">Home One</a>
+                                            <a href="hotels.php" class="nav-link">Home One</a>
                                         </li>
 
                                         <li class="nav-item">
@@ -242,7 +241,7 @@ include "../core/chambreC.php";
                     </div>
                     <div class="modal-body">
                         <div class="logo">
-                            <a href="index-2.html">
+                            <a href="hotels.php">
                                 <img src="assets/img/logo.png" alt="logo">
                             </a>
                         </div>
@@ -324,7 +323,7 @@ include "../core/chambreC.php";
             <div class="container">
                 <div class="page-banner-content">
                     <h2>Tours</h2>
-                    <p><a href="index-2.html">Home</a> / Tours</p>
+                    <p><a href="hotels.php">Home</a> / Tours</p>
                 </div>
             </div>
         </section>
